@@ -1,0 +1,1630 @@
+[
+  {
+    "id": 9688,
+    "question": "Data warehouse contains___________ data that is never found in operational environment.",
+    "answers": [
+      { "id": 38817, "answer": "Scripted", "correct": false },
+      { "id": 38818, "answer": "Encoded", "correct": false },
+      { "id": 38819, "answer": "Encrypted", "correct": false },
+      { "id": 38820, "answer": "Summary", "correct": true }
+    ],
+    "explanation": "<a href=\"https://www.geeksforgeeks.org/data-warehousing/\" rel=\"noopener\" target=\"_blank\">Data Warehouse</a> is a relational database that is designed for query and analysis rather than for transaction processing. It usually contains historical data derived from transaction data, but it can include data from other sources.\r\n\r\nThe goal is to produce statistical results that may help in decision makings. \r\n\r\nOption (D) is correct."
+  },
+  {
+    "id": 9689,
+    "question": "Suppose a system has 12 instances of some resources with n processes competing for that resource. Each process may require 4 instances of the resource. The maximum value of n for which the system never enters into deadlock is",
+    "answers": [
+      { "id": 38821, "answer": "3", "correct": true },
+      { "id": 38822, "answer": "4", "correct": false },
+      { "id": 38823, "answer": "5", "correct": false },
+      { "id": 38824, "answer": "6", "correct": false }
+    ],
+    "explanation": "Given,\rNumber of resources (R) = 12\rMax need for each resource (N) = 3\r\rSince deadlock-free condition is:\r<pre>R ≥ P(N − 1) + 1 </pre>\r\nWhere R is total number of resources,\r\nP is the number of processes, and\r\nN is the max need for each resource.\r\n<pre>\r\n12 ≥ P(4 − 1) + 1\r\n11 ≥ 3P\r\n11/3 ≥ P\r\nP ≤ 3.66 </pre>\r\n(Take, floor value for maximum)\r\nTherefore, the largest value of P that will always avoid deadlock is 3.\r\n\r\nOption (A) is correct.\n"
+  },
+  {
+    "id": 9690,
+    "question": "​To overcome difficulties in Readers-Writers problem, which of the following statement/s is/are true ?\r\n<ol>\r\n<li>Writers are given exclusive access to shared objects\r\n</li>\r\n<li>Readers are given exclusive access to shared objects\r\n</li>\r\n<li>Both readers and writers are given exclusive access to shared objects.\r\n</li>\r\n</ol>\r\nChoose the correct answer from the code given below:\r\n",
+    "answers": [
+      { "id": 38825, "answer": "1 only", "correct": true },
+      { "id": 38826, "answer": "Both 2 and 3", "correct": false },
+      { "id": 38827, "answer": "2 only", "correct": false },
+      { "id": 38828, "answer": "3 only", "correct": false }
+    ],
+    "explanation": "<p>In <a href=\"https://www.geeksforgeeks.org/readers-writers-problem-set-1-introduction-and-readers-preference-solution/\" rel=\"noopener\" target=\"_blank\">Readers-Writers Problem</a>, since readers do not modify values, so these can be allowed with other readers. But writers are given exclusive access to shared objects.\r\n\r\nOnly statement (1) is correct.</p>"
+  },
+  {
+    "id": 9691,
+    "question": "<p>Consider the following terminology and match List 1 and List 2 and choose the correct answer from the code given below\r\nb= branch factor\r\nd= depth of shallowest solution\r\nM= Maximum depth of the search tree\r\nI= depth limit\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200915101130/186.png\" alt=\"\" width=\"766\" height=\"143\" class=\"aligncenter size-full wp-image-485781\" /></p>",
+    "answers": [
+      {
+        "id": 38829,
+        "answer": "(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)",
+        "correct": false
+      },
+      {
+        "id": 38830,
+        "answer": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+        "correct": true
+      },
+      {
+        "id": 38831,
+        "answer": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
+        "correct": false
+      },
+      {
+        "id": 38832,
+        "answer": "(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)",
+        "correct": false
+      }
+    ],
+    "explanation": "BFS → O(b^d) worst case space complexity\r\nDFS → O(bm) worst case space complexity\r\nDepth - Limited Search → O(bl)\r\nIterative deepening Search → O(bd)\r\n\r\nOption (B) is correct."
+  },
+  {
+    "id": 9692,
+    "question": "​The third generation mobile phone are digital and based on ",
+    "answers": [
+      { "id": 38833, "answer": "AMPS", "correct": false },
+      { "id": 38834, "answer": "Broadband CDMA", "correct": true },
+      { "id": 38835, "answer": "CDMA", "correct": false },
+      { "id": 38836, "answer": "D-AMPS", "correct": false }
+    ],
+    "explanation": "<p>First generation supports AMPS.\r\n\r\nSecond generation supports D-AMPS and CDMA.\r\n\r\nThird generation of wireless communication technology, it <u>supports broadband</u> voice, data and multimedia communication technologies in wireless networks.\r\n\r\n\r\nRefer - <a href=\"https://en.wikipedia.org/wiki/Mobile_technology#Mobile_communication_industry[2]\" rel=\"noopener\" target=\"_blank\">https://en.wikipedia.org/wiki/Mobile_technology#Mobile_communication_industry[2]</a>\r\n\r\nOption (B) is correct.</p>"
+  },
+  {
+    "id": 9693,
+    "question": "Consider ISO-OSI network architecture reference model. Session layer of this model offer Dialog control, token management and ____________ as services.",
+    "answers": [
+      { "id": 38837, "answer": "Synchronization", "correct": true },
+      { "id": 38838, "answer": "Asynchronization", "correct": false },
+      { "id": 38839, "answer": "Errors", "correct": false },
+      { "id": 38840, "answer": "Flow control", "correct": false }
+    ],
+    "explanation": "<p>Functions of <a href=\"https://www.geeksforgeeks.org/design-issues-in-session-layer/\" rel=\"noopener\" target=\"_blank\">Session Layer</a> : Dialog Control, Managing Tokens, Synchronization.\r\n\r\nFlow control and error corrections are managed at <a href=\"https://www.geeksforgeeks.org/transport-layer-responsibilities/\" rel=\"noopener\" target=\"_blank\">Transport layer</a>.\r\n\r\nOption (B) is correct.</p>"
+  },
+  {
+    "id": 9694,
+    "question": "<p>Consider the following two languages:\r\nL​<sub>1</sub>​ = {x | for some y with | y| = 2<sup>|x|</sup> , xy ∈ L and L is regular language}\r\nL<sub>2</sub>​ = { x | for some y such that |x| = |y| , xy ∈ L and L is regular language}\r\n\r\nWhich one of the following is correct?</p>",
+    "answers": [
+      {
+        "id": 38841,
+        "answer": "<p>Both L​<sub>1</sub>​ and L<sub>2</sub>​ are regular languages</p>",
+        "correct": true
+      },
+      {
+        "id": 38842,
+        "answer": "<p>Both L​<sub>1</sub>​ and L<sub>2</sub>​ are not regular languages</p>",
+        "correct": false
+      },
+      {
+        "id": 38843,
+        "answer": "<p>Only L​<sub>1</sub>​ is regular language</p>",
+        "correct": false
+      },
+      {
+        "id": 38844,
+        "answer": "<p>Only L​<sub>2</sub> is regular language</p>",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9695,
+    "question": "An internet service provider (ISP) has following chunk of CIDR-based IP addresses available with it: 245.248.128.0/20 . The ISP want to give half of this chunk of addresses to organization A and a quarter to Organization B while retaining the remaining with itself. Which of the following is a valid allocation of addresses to A and B ?",
+    "answers": [
+      {
+        "id": 38845,
+        "answer": "245.248.132.0/22 and 245.248.132.0/21",
+        "correct": false
+      },
+      {
+        "id": 38846,
+        "answer": "245.248.136.0/21 and 245.248.128.0/22",
+        "correct": true
+      },
+      {
+        "id": 38847,
+        "answer": "245.248.136.0/24 and 245.248.132.0/21",
+        "correct": false
+      },
+      {
+        "id": 38848,
+        "answer": "245.248.128.0/21 and 245.248.128.0/22",
+        "correct": false
+      }
+    ],
+    "explanation": "<p>See Question 4 of <a href=\"https://www.geeksforgeeks.org/computer-networks-set-1/\" rel=\"noopener\" target=\"_blank\">https://www.geeksforgeeks.org/computer-networks-set-1/</a>\r\n\r\nOption (B) is correct.</p>"
+  },
+  {
+    "id": 9696,
+    "question": "​The Software Requirement Specification(SRS) is said to be _________ if and only if no subset of individual requirements described in it conflict with each other.",
+    "answers": [
+      { "id": 38849, "answer": "Correct", "correct": false },
+      { "id": 38850, "answer": "Consistent ", "correct": true },
+      { "id": 38851, "answer": "Unambiguous", "correct": false },
+      { "id": 38852, "answer": "Verifiable", "correct": false }
+    ],
+    "explanation": "<ul>\r\n<li>SRS is said to be <b>correct</b> if it covers all the requirements that are actually expected from the system.\r\n</li>\r\n<li><a href=\"https://www.geeksforgeeks.org/software-engineering-quality-characteristics-of-a-good-srs/\" rel=\"noopener\" target=\"_blank\">Requirements in SRS</a> are said to be <b>consistent</b> if there are no conflicts between any set of requirements. Examples of conflict include differences in terminologies used at separate places, logical conflicts like time period of report generation, etc.\r\n</li>\r\n<li>An SRS is said to be <b>unambiguous</b> if all the requirements stated have only 1 interpretation. \r\n</li>\r\n<li>An SRS is <b>verifiable</b> if there exists a specific technique to quantifiably measure the extent to which every requirement is met by the system. \r\n</li>\r\n</ul>\r\n\r\nOption (B) is correct."
+  },
+  {
+    "id": 9697,
+    "question": "​Consider the vocabulary with only four propositions A,B,C and D. How many models are there for the following sentence ?\r\n<pre>(⌐ A ∨​ ⌐B ∨​ ⌐C ∨​ ⌐ ​D) </pre>",
+    "answers": [
+      { "id": 38853, "answer": "8", "correct": false },
+      { "id": 38854, "answer": "7", "correct": false },
+      { "id": 38855, "answer": "15", "correct": true },
+      { "id": 38856, "answer": "16", "correct": false }
+    ],
+    "explanation": "There are four variables A, B, C, D. Therefore 2^4 = 16.\r\n\r\nFrom 0 to 15 models are exist, but one is 0, so 15 is correct answer."
+  },
+  {
+    "id": 9698,
+    "question": "​ Which of the following statements is/are ​false ?\r\n<ul>\r\n<li>P: The clean-room strategy to software engineering is based on the incremental software process model.\r\n</li>\r\n<li>Q: The clean-room strategy to software engineering is one of the ways to overcome “unconscious” copying of copyrighted code.\r\n</li>\r\n</ul>\r\nChoose the correct answer from the code given below:",
+    "answers": [
+      { "id": 38857, "answer": "Neither P and Q", "correct": true },
+      { "id": 38858, "answer": "P only", "correct": false },
+      { "id": 38859, "answer": "Both P and Q", "correct": false },
+      { "id": 38860, "answer": "Q only", "correct": false }
+    ],
+    "explanation": "The cleanroom software engineering process is a software development process intended to produce software with a certifiable level of reliability. The focus of the cleanroom process is on defect prevention, rather than defect removal. \r\n\r\nThe Cleanroom approach to software development is based on five key strategies : Formal specification, Incremental development, Structured programming, Static verification, and Statistical testing of the system.\r\n\r\nSo, none given statements are false."
+  },
+  {
+    "id": 9699,
+    "question": "​If the frame buffer has 10-bits per pixel and 8-bits are allocated for each of the R, G and B components then what would be the size of the color lookup table (LUT)",
+    "answers": [
+      {
+        "id": 38861,
+        "answer": "<p>(2<sup>​10</sup>​ +2​<sup>11​</sup> ) bytes</p>",
+        "correct": true
+      },
+      {
+        "id": 38862,
+        "answer": "<p>(2​<sup>10​</sup> +2<sup>8</sup>​ ) bytes</p>",
+        "correct": false
+      },
+      {
+        "id": 38863,
+        "answer": "<p>(2​<sup>10</sup>​ + 2​<sup>24</sup>​ ) bytes</p>",
+        "correct": false
+      },
+      {
+        "id": 38864,
+        "answer": "<p>(2​<sup>8</sup>​ + 2​<sup>9</sup>​ ) bytes</p>",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9700,
+    "question": "Suppose P, Q and R are co-operating processes satisfying Mutual Exclusion condition. Then if the process Q is executing in its critical section then ",
+    "answers": [
+      {
+        "id": 38865,
+        "answer": "‘P’ executes in critical section",
+        "correct": false
+      },
+      {
+        "id": 38866,
+        "answer": "‘R’ executes in critical section",
+        "correct": false
+      },
+      {
+        "id": 38867,
+        "answer": "Neither ‘P’ nor ‘Q’ executes in their critical section",
+        "correct": true
+      },
+      {
+        "id": 38868,
+        "answer": "Both ‘P’ and ‘R’ executes in critical section",
+        "correct": false
+      }
+    ],
+    "explanation": "<a href=\"https://www.geeksforgeeks.org/mutual-exclusion-in-synchronization/\" rel=\"noopener\" target=\"_blank\">Mutual exclusion</a> is a property of process synchronization which states that “no two processes can exist in the critical section at any given point of time”. The term was first coined by Djikstra. Any process synchronization technique being used must satisfy the property of mutual exclusion, without which it would not be possible to get rid of a race condition.\r\n\r\nSo, option (C) is correct."
+  },
+  {
+    "id": 9701,
+    "question": "A Computer uses a memory unit with 256K word of 32 bits each. A binary instruction code is stored in one word of memory. The instruction has four parts: an indirect bit, an operation code and a register code part to specify one of 64 registers and an address part. How many bits are there in operation code, the register code part and the address part ?",
+    "answers": [
+      { "id": 38869, "answer": "7, 7, 18", "correct": false },
+      { "id": 38870, "answer": "18, 7, 7", "correct": false },
+      { "id": 38871, "answer": "7, 6, 18", "correct": true },
+      { "id": 38872, "answer": "6, 7, 18", "correct": false }
+    ],
+    "explanation": "<p>Indirect 1 bit\r\nAddress\t2<sup>8</sup> (256kB) * 2<sup>10</sup> (1024 bytes/kB) = 2<sup>18</sup> ==> 18 bits\r\n\r\nReg 64 registers = 2<sup>6</sup> => 6 bits\r\n\r\nOP-code\t32 - 1 - 18 - 6 bits = 7 bits.\r\n\r\nOption (C) is correct.</p>"
+  },
+  {
+    "id": 9702,
+    "question": "<p>Consider the following set of processes and the length of CPU burst time given in milliseconds:\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200915113443/265.png\" alt=\"\" width=\"297\" height=\"209\" class=\"aligncenter size-full wp-image-485827\" />\r\n\r\nAssume that processes being scheduled with Round-Robin Scheduling Algorithm with Time Quantum 4ms. Then The waiting time for P4 is _________ ms.</p>",
+    "answers": [
+      { "id": 38873, "answer": "0", "correct": false },
+      { "id": 38874, "answer": "4", "correct": false },
+      { "id": 38875, "answer": "12", "correct": true },
+      { "id": 38876, "answer": "6", "correct": false }
+    ],
+    "explanation": "<p>According to <a href=\"https://www.geeksforgeeks.org/program-round-robin-scheduling-set-1/\" rel=\"noopener\" target=\"_blank\">Round-Robin Scheduling</a> Algorithm with Time Quantum 4ms :\r\n\r\nGantt chart,\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201005111431/1130.png\" alt=\"\" width=\"446\" height=\"51\" class=\"aligncenter size-full wp-image-494927\" />\r\n\r\nSo, waiting time for P4 = 16 − 4 = 12 ms.\r\n\r\nOption (C) is correct.</p>"
+  },
+  {
+    "id": 9703,
+    "question": "Which of the following HTML5 codes will affect the horizontal as well as vertical alignment of the table content ?",
+    "answers": [
+      {
+        "id": 38877,
+        "answer": "< t d halign = \" middle\" valign = \" center\" > BASH < / td >",
+        "correct": false
+      },
+      {
+        "id": 38878,
+        "answer": "< t d style = \" text − a lign : center; vertical − a lign : middle; \" > BASH < / td >",
+        "correct": true
+      },
+      {
+        "id": 38879,
+        "answer": "< t d align = \"middle\" valign = \" center\" > B ASH < / td >",
+        "correct": false
+      },
+      {
+        "id": 38880,
+        "answer": "< t d style = \" horizontal − a lign : c enter; vertical − a lign : m iddle; \" > B ASH < / td >",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9704,
+    "question": "The number of substrings that can be formed from string given by “a d e f b g h n m p” is",
+    "answers": [
+      { "id": 38881, "answer": "10", "correct": false },
+      { "id": 38882, "answer": "45", "correct": false },
+      { "id": 38883, "answer": "56", "correct": true },
+      { "id": 38884, "answer": "55", "correct": false }
+    ],
+    "explanation": "Total <a href=\"https://www.geeksforgeeks.org/number-substrings-string/\" rel=\"noopener\" target=\"_blank\">number of non-empty substrings</a> of all lengths from 1 to n \r<pre>= n + (n-1) + (n-2) + (n-3) + … 2 + 1\r\n= n * (n + 1)/2 </pre>\r\nThese are non-empty substrings, but if you count null substrings there are [n(n+1)/2] + 1.\r\n\r\nWhere, n = 10, \r\nSo, total number of all substrings are = 10*11/2 + 1 = 55+1 = 56.\r\n\r\nOption (C) is correct. \n"
+  },
+  {
+    "id": 9705,
+    "question": "Which of the following statement/s is/are true ?\r\n<ul>\r\n<li><b>(i)</b> Firewall can screen traffic going into or out of an organization.\r\n</li>\r\n<li><b>(ii)</b> Virtual private networks cam simulate an old leased network to provide certain desirable properties.\r\n</li>\r\n</ul>\r\nChoose the correct answer from the code given below:",
+    "answers": [
+      { "id": 38885, "answer": "(i) only", "correct": false },
+      { "id": 38886, "answer": "Neither (i) nor (ii)", "correct": false },
+      { "id": 38887, "answer": "Both (i) and (ii)", "correct": true },
+      { "id": 38888, "answer": "(ii) only", "correct": false }
+    ],
+    "explanation": "<p>A <a href=\"https://www.geeksforgeeks.org/introduction-of-firewall-in-computer-network/\" rel=\"noopener\" target=\"_blank\">firewall</a> is a network security device, either hardware or software-based, which monitors all incoming and outgoing traffic and based on a defined set of security rules it accepts, rejects or drops that specific traffic. So, statement (i) is correct.\r\n\r\nThe traditional method of establishing a secure connection between head office and branch was to have a leased line between the branches and head office which was very costly as well as troublesome job. <a href=\"https://www.geeksforgeeks.org/virtual-private-network-vpn-introduction/\" rel=\"noopener\" target=\"_blank\">VPN</a> let us overcome this issue in an effective manner. So. statement (ii) is also correct.\r\n\r\nOption (C) is correct.\r\n\r\n</p>"
+  },
+  {
+    "id": 9706,
+    "question": "<p>Match the List 1 and List 2 and choose the correct answer from the code given below:\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200915114312/356.png\" alt=\"\" width=\"722\" height=\"95\" class=\"aligncenter size-full wp-image-485835\" /></p>",
+    "answers": [
+      {
+        "id": 38889,
+        "answer": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+        "correct": false
+      },
+      {
+        "id": 38890,
+        "answer": "(a)-(ii), (b)-(i),(c)-(iii), (d)-(iv)",
+        "correct": false
+      },
+      {
+        "id": 38891,
+        "answer": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+        "correct": true
+      },
+      {
+        "id": 38892,
+        "answer": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+        "correct": false
+      }
+    ],
+    "explanation": "In particular, there are three related conditional statements that occur so often that they have special names.\r\n<ul>\r\n<li><b>Implication :</b> p → q\r\n</li>\r\n<li><b>Converse :</b> The converse of the proposition p → q is q → p\r\n</li>\r\n<li><b>Contrapositive :</b> The contrapositive of the proposition p → q is q' → p'\r\n</li>\r\n<li><b>Inverse :</b> The inverse of the proposition p → q is 'p → q'\r\n</li>\r\n</ul>\r\n\r\nSo, option (C) is correct."
+  },
+  {
+    "id": 9707,
+    "question": "Consider the following language:\r\n<pre>L​<sub>1</sub>​ = { a<sup>n+m</sup> b<sup>n</sup> a<sup>m</sup> | n, m ≥ 0 }\r\nL​<sub>2</sub> = { a<sup>n+m</sup> b<sup>n+m</sup> a<sup>n+m</sup> |n, m ≥ 0 } </pre>\r\nWhich one of the following is correct ?",
+    "answers": [
+      {
+        "id": 38893,
+        "answer": "<p>Only L​<sub>1</sub>​ is Context Free Language</p>",
+        "correct": true
+      },
+      {
+        "id": 38894,
+        "answer": "<p>Both L​<sub>1</sub>​ and L​<sub>2</sub>​ are not Context Free Language</p>",
+        "correct": false
+      },
+      {
+        "id": 38895,
+        "answer": "<p>Only L​<sub>1</sub>​ is Context Free Language</p>",
+        "correct": false
+      },
+      {
+        "id": 38896,
+        "answer": "<p>Both L​<sub>1</sub>​ and L​<sub>2</sub>​ are Context Free Language</p>",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9708,
+    "question": "Consider the following statements related to AND-OR Search algorithm.\r\n<ul>\r\n<li><b>S​1​ :</b> A solution is a subtree that has a goal node at every leaf.\r\n</li>\r\n<li><b>S​2​ :</b> OR nodes are analogous to the branching in a deterministic environment\r\n</li>\r\n<li><b>S​3 :</b> AND nodes are analogous to the branching in a non-deterministic environment.\r\n</li>\r\n</ul>\r\nWhich one of the following is true referencing the above statements ? Choose the correct answer from the code given below:  ",
+    "answers": [
+      {
+        "id": 38897,
+        "answer": "S1- False, S2- True, S3- True",
+        "correct": false
+      },
+      {
+        "id": 38898,
+        "answer": "S1- True, S2- True, S3- True",
+        "correct": true
+      },
+      {
+        "id": 38899,
+        "answer": "S1- False, S2- True, S3- False",
+        "correct": false
+      },
+      {
+        "id": 38900,
+        "answer": "S1- True, S2- True, S3- False",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9709,
+    "question": "<p>Which homogeneous 2D matrix transforms the figure (a) on the left side to the figure (b) on the right ?\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916095739/187.png\" alt=\"\" width=\"726\" height=\"316\" class=\"aligncenter size-full wp-image-486580\" />\r\n\r\n</p>",
+    "answers": [
+      {
+        "id": 38901,
+        "answer": "<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916095757/266.png\" width=\"136\" height=\"90\" class=\"alignleft size-full\" />",
+        "correct": false
+      },
+      {
+        "id": 38902,
+        "answer": "<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916095824/357.png\" width=\"128\" height=\"84\" class=\"alignleft size-full\" />",
+        "correct": true
+      },
+      {
+        "id": 38903,
+        "answer": "<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916095841/434.png\" width=\"109\" height=\"80\" class=\"alignleft size-full\" />",
+        "correct": false
+      },
+      {
+        "id": 38904,
+        "answer": "<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916095855/535.png\" width=\"124\" height=\"77\" class=\"alignleft size-full\" />",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9710,
+    "question": "​Identify the correct sequence in which the following packets are transmitted on the network by a host when a browser requests a web page from a remote server, assuming that the host has been restarted.",
+    "answers": [
+      {
+        "id": 38905,
+        "answer": "HTTP GET request, DNS query, TCP SYN",
+        "correct": false
+      },
+      {
+        "id": 38906,
+        "answer": "DNS query, TCP SYN, HTTP GET request",
+        "correct": true
+      },
+      {
+        "id": 38907,
+        "answer": "TCP SYN, DNS query, HTTP GET request",
+        "correct": false
+      },
+      {
+        "id": 38908,
+        "answer": "DNS query, HTTP Get request, TCP SYN",
+        "correct": false
+      }
+    ],
+    "explanation": "<p>Option (B) is correct.\r\n\r\nPlease refer for explanation - <a href=\"https://www.geeksforgeeks.org/gate-gate-cs-2016-set-2-question-35/\" rel=\"noopener\" target=\"_blank\">GATE-CS-2016 (Set 2) | Question 35</a></p>"
+  },
+  {
+    "id": 9711,
+    "question": "Consider a system with 2 level cache. Access times of Level 1, Level 2 cache and main memory are 0.5 ns, 5 ns and 100 ns respectively. The hit rates of Level1 and Level2 caches are 0.7 and 0.8 respectively. What is the average access time of the system ignoring the search time within cache ?",
+    "answers": [
+      { "id": 38909, "answer": "20.75 ns", "correct": false },
+      { "id": 38910, "answer": "7.55 ns", "correct": true },
+      { "id": 38911, "answer": "24.35 ns", "correct": false },
+      { "id": 38912, "answer": "35.20 ns", "correct": false }
+    ],
+    "explanation": "T(avgaccess) \r<pre>= H1.T1+(1−H1)(H2.T2+(1−H2).TM) \r\n= (0.7∗0.5)+(0.3)((0.8∗5)+(0.2).100)\r\n= (0.35)+(0.3)(4+20)\r\n= 0.35+7.2\r\n= 7.55 ns </pre>\r\n\r\nOption (B) is correct.\n"
+  },
+  {
+    "id": 9712,
+    "question": "In computers, subtraction is generally carried out by",
+    "answers": [
+      { "id": 38913, "answer": "1’s complement", "correct": false },
+      { "id": 38914, "answer": "10’s complement", "correct": false },
+      { "id": 38915, "answer": "2’s complement", "correct": true },
+      { "id": 38916, "answer": "9’s complement", "correct": false }
+    ],
+    "explanation": "Generally, computer system uses <a href=\"https://www.geeksforgeeks.org/efficient-method-2s-complement-binary-string/\" rel=\"noopener\" target=\"_blank\">2's complement</a> for signed number representation, because this representation is unambiguous and easy for arithmetic calculation. \r\n\r\nOption (C) is correct. "
+  },
+  {
+    "id": 9713,
+    "question": "Consider the following tables (relations) :\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916100839/628.png\" alt=\"\" width=\"474\" height=\"440\" class=\"aligncenter size-full wp-image-486599\" />\r\n\r\nPrimary keys in the tables are shown using Underline. Now, Consider the following query:\r\n<pre>SELECT S.Name, Sum (P.Marks)\r\nFROM Students S, Performance P\r\nWHERE S.Roll-No = P.Roll-No\r\nGROUP BY S.Name </pre>\r\nThe number of rows returned by the above query is",
+    "answers": [
+      { "id": 38917, "answer": "3", "correct": false },
+      { "id": 38918, "answer": "2", "correct": true },
+      { "id": 38919, "answer": "0", "correct": false },
+      { "id": 38920, "answer": "1", "correct": false }
+    ],
+    "explanation": "There are two groups by name : Ramesh and Mukesh. So, answer is 2.\r\n\r\n"
+  },
+  {
+    "id": 9714,
+    "question": "Which of the following is true for semi-dynamic ​ environment ?",
+    "answers": [
+      {
+        "id": 38921,
+        "answer": "The environment itself does not change with the passage of time but the agent’s performance score does.",
+        "correct": true
+      },
+      {
+        "id": 38922,
+        "answer": "The environment change while the agent is deliberating.",
+        "correct": false
+      },
+      {
+        "id": 38923,
+        "answer": "Even if the environment changes with the passage of time while deliberating, the performance score does not change.",
+        "correct": false
+      },
+      {
+        "id": 38924,
+        "answer": "Environment and performance score, both change simultaneously.",
+        "correct": false
+      }
+    ],
+    "explanation": "The environment is unchanged while an agent is deliberating. (The environment is <u>semidynamic</u> if the environment itself does not change with the passage of time but the agent's performance score does.). \r\n\r\nIf the environment can change itself while an agent is deliberating then such environment is called a <u>dynamic</u> environment else it is called a <u>static</u> environment.\r\n\r\nOption (A) is correct."
+  },
+  {
+    "id": 9715,
+    "question": "​In 3D Graphics, which of the following statements about perspective and parallel projection is/are true ?\r\n<ul>\r\n<li><b>P:</b>​ In a perspective projection, the farthest an object is from the center of projection, the smaller it appears.\r\n</li>\r\n<li><b>Q:</b> ​Parallel projection is equivalent to a perspective projection where the viewer is standing infinitely far away\r\n</li>\r\n<li><b>R:</b>​ Perspective projections do not preserve straight lines.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 38925, "answer": "P and R only", "correct": false },
+      { "id": 38926, "answer": "P, Q and R", "correct": true },
+      { "id": 38927, "answer": "Q and R only", "correct": false },
+      { "id": 38928, "answer": "P and Q only", "correct": false }
+    ],
+    "explanation": "<p>An important feature of <a href=\"https://www.geeksforgeeks.org/difference-between-parallel-and-perspective-projection-in-computer-graphics/\" rel=\"noopener\" target=\"_blank\">perspective projections</a> is that it preserves straight lines, this allows us to project only the end-points of 3D lines and then draw a 2D line between the projected endpoints.\r\n\r\nAll given statements are correct.\r\n\r\nOption (B) is true.</p>"
+  },
+  {
+    "id": 9716,
+    "question": "Which of the following statements is/are true ?\r\n<ul>\r\n<li><b>P:</b> Software Reengineering is preferable for software products having high failure rates, having poor design and/or having poor code structure\r\n</li>\r\n<li><b>Q:</b> Software Reverse Engineering is the process of analyzing software with the objective of recovering its design and requirement specification.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 38929, "answer": "P only", "correct": false },
+      { "id": 38930, "answer": "Neither P nor Q", "correct": false },
+      { "id": 38931, "answer": "Q only", "correct": false },
+      { "id": 38932, "answer": "Both P and Q", "correct": true }
+    ],
+    "explanation": "<a href=\"https://www.geeksforgeeks.org/software-engineering-re-engineering/\" rel=\"noopener\" target=\"_blank\">Re-engineering</a> is the reorganizing and modifying existing software systems to make them more maintainable.\r\n\r\n<a href=\"https://www.geeksforgeeks.org/software-engineering-reverse-engineering/\" rel=\"noopener\" target=\"_blank\">Reverse Engineering</a> is a process of recovering the design, requirement specifications and functions of a product from an analysis of its code. It builds a program database and generates information from this.\r\n\r\nBoth statements are correct."
+  },
+  {
+    "id": 9717,
+    "question": "<p>​Software coupling involves dependencies among pieces of software called modules. Which of the following are correct statements with respect to module coupling ?</p><ul><li><strong>P:</strong> Common Coupling occurs when two modules share the same global data.</li><li><strong>Q:</strong> Control Coupling occur when modules share a composite data structure and use only part of it.</li><li><strong>R:</strong> Content coupling occurs when one module modifies or relies on the internal working of another module.</li></ul>",
+    "answers": [
+      { "id": 38933, "answer": "<p>P and Q only</p>", "correct": false },
+      { "id": 38934, "answer": "<p>P and R only</p>", "correct": true },
+      { "id": 38935, "answer": "<p>Q and R only</p>", "correct": false },
+      { "id": 38936, "answer": "<p>All of P, Q and R</p>", "correct": false }
+    ],
+    "explanation": "<p><a href=\"&quot;https://www.geeksforgeeks.org/module-coupling-and-its-types/&quot;\">Coupling</a> simply means to connect two or more things together. It means the pairing of two things.</p><ul><li>Common coupling simply means the sharing of common data or global data between several modules.</li><li><u>Control coupling</u> simply means to control data sharing between modules. <u>Stamp coupling</u> simply means the sharing of composite data structure between modules.</li><li>In Content coupling, one module relies or depends upon the internal workings of another module.</li></ul><p>So, only statement P and R are correct.</p>"
+  },
+  {
+    "id": 9718,
+    "question": "Consider the following pseudo-code fragment, where m is a non-negative integer that has been initialized :\r\n<pre>\r\np=0;\r\nk=0;\r\nwhile(k < m)\r\n        p = p + 2k;\r\n        k=k+1;\r\nend while </pre>\r\nWhich of the following is a loop invariant for the while statement?\r\n(Note: a loop variant for a while statement is an assertion that is true each time guard is evaluated during the execution of the while statement).",
+    "answers": [
+      {
+        "id": 38937,
+        "answer": "<p>p = 2<sup>k</sup> − 1 and 0≤k&lt;m</p>",
+        "correct": false
+      },
+      {
+        "id": 38938,
+        "answer": "<p>p = 2<sup>k+1</sup> − 1 and 0≤k&lt;m </p>",
+        "correct": false
+      },
+      {
+        "id": 38939,
+        "answer": "<p>p = 2<sup>k</sup> − 1 and 0≤k≤m</p>",
+        "correct": true
+      },
+      {
+        "id": 38940,
+        "answer": "<p>p = 2<sup>k+1</sup> − 1 and 0≤k≤m</p>",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9719,
+    "question": "The K-coloring of an undirected graph G=(V,E) is a function C: V➝{0,1,......,K-1} such that c(u)≠c(v) for every edge (u,v) ∈ E Which of the following is not correct ?",
+    "answers": [
+      {
+        "id": 38941,
+        "answer": "G has no cycles of odd length",
+        "correct": false
+      },
+      { "id": 38942, "answer": "G has cycle of odd length", "correct": true },
+      { "id": 38943, "answer": "G is 2-colorable", "correct": false },
+      { "id": 38944, "answer": "G is bipartite", "correct": false }
+    ],
+    "explanation": "A <a href=\"https://www.geeksforgeeks.org/bipartite-graph/\" rel=\"noopener\" target=\"_blank\">bipartite graph</a> is a special kind of graph with the following properties-\r\n<ul>\r\n<li>It consists of two sets of vertices X and Y.\r\n</li>\r\n<li>The vertices of set X join only with the vertices of set Y.\r\n</li>\r\n<li>The vertices within the same set do not join.\r\n</li>\r\n</ul>\r\n\r\nBipartite graphs may be characterized in several different ways:\r\n\r\n<ul>\r\n<li>A graph is bipartite if and only if it does not contain an odd cycle.\r\n</li>\r\n<li>A graph is bipartite if and only if it is 2-colorable, (i.e. its chromatic number is less than or equal to 2).\r\n</li>\r\n<li>The spectrum of a graph is symmetric if and only if it's a bipartite graph.\r\n</li>\r\n</ul>\r\n\r\nOption (B) is false."
+  },
+  {
+    "id": 9720,
+    "question": "Consider the following problems:\r\n<ul>\r\n<li>(i) Whether a finite automaton halts on all inputs?\r\n</li>\r\n<li>(ii) Whether a given Context Free Language is Regular?\r\n</li>\r\n<li>(iii) Whether a Turing Machine computes the product of two numbers?\r\n</li>\r\n</ul>\r\nWhich one of the following is correct ?",
+    "answers": [
+      {
+        "id": 38945,
+        "answer": "Only (ii) and (iii) are undecidable problems",
+        "correct": true
+      },
+      {
+        "id": 38946,
+        "answer": "(i), (ii) and (iii) are undecidable problems",
+        "correct": false
+      },
+      {
+        "id": 38947,
+        "answer": "Only (i) and (ii) are undecidable problems",
+        "correct": false
+      },
+      {
+        "id": 38948,
+        "answer": "Only (i) and (iii) are undecidable problems",
+        "correct": false
+      }
+    ],
+    "explanation": "<p>A <a href=\"https://www.geeksforgeeks.org/decidability-and-undecidability-in-toc/\" rel=\"noopener\" target=\"_blank\">decision problem</a> P is said to be decidable (i.e., have an algorithm) if the language L of all yes instances to P is decidable.\r\n\r\nMembership problem of finite finite automaton is <a href=\"https://www.geeksforgeeks.org/decidability-table-in-theory-of-computation/\" rel=\"noopener\" target=\"_blank\">decidable</a>.\r\n\r\nOnly (ii) and (iii) are undecidable problems.\r\n\r\nOption (A) is correct.\r\n\r\n</p>"
+  },
+  {
+    "id": 9721,
+    "question": "Consider the following statements\r\n<ul>\r\n<li><b>S1:</b>​ A heuristic is admissible if it never overestimates the cost to reach the goal.\r\n</li>\r\n<li><b>S2:</b>​ A heuristic is monotonous if it follows triangle inequality property.\r\n</li>\r\n</ul>\r\nWhich one of the following is true referencing the above statements ?",
+    "answers": [
+      {
+        "id": 38949,
+        "answer": "Statement S1 is true but statement S2 is false.",
+        "correct": false
+      },
+      {
+        "id": 38950,
+        "answer": "Statement S1 is false but statement S2 is true.",
+        "correct": false
+      },
+      {
+        "id": 38951,
+        "answer": "Neither of the statements S1 and S2 are true.",
+        "correct": false
+      },
+      {
+        "id": 38952,
+        "answer": "Both the statements S1 and S2 are true.",
+        "correct": true
+      }
+    ],
+    "explanation": "In algorithms related to pathfinding, a heuristic function is said to be admissible if it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path.\r\n\r\n\r\nIt's necessary and sufficient for a heuristic to obey the triangle inequality in order to be consistent or monotone. The triangle inequality states that for any triangle, the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side.\r\n\r\nSo, both statements are correct."
+  },
+  {
+    "id": 9722,
+    "question": "Consider the following two statements:\r\n<ul>\r\n<li><b>S1:</b> TCP handles both congestion and flow control.\r\n</li>\r\n<li><b>S2:</b> UDP handles congestion but not flow control.\r\n</li>\r\n</ul>\r\nWhich of the following option is correct with respect to the above statements (S1) and (S2) ?",
+    "answers": [
+      { "id": 38953, "answer": "Both S1 and S2 are correct", "correct": false },
+      {
+        "id": 38954,
+        "answer": "Neither S1 nor S2 is correct",
+        "correct": false
+      },
+      {
+        "id": 38955,
+        "answer": "S1 is not correct but S2 is correct",
+        "correct": false
+      },
+      {
+        "id": 38956,
+        "answer": "S1 is correct but S2 is not correct",
+        "correct": true
+      }
+    ],
+    "explanation": "<ul>\r\n<li><b>S1:</b> With the help of TCP window => flow control, and with the help of congestion window => Congestion control.\r\n</li>\r\n<li><b>S2:</b> No field are there in UDP header to control flow or congestion.\r\n</li>\r\n</ul>\r\n\r\nOption (D) is correct."
+  },
+  {
+    "id": 9723,
+    "question": "<p>Match the following secret key algorithm (List 1) with the corresponding key lengths (List 2) and choose the correct answer from the code given below.\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916113516/188.png\" alt=\"\" width=\"654\" height=\"142\" class=\"aligncenter size-full wp-image-486639\" /></p>",
+    "answers": [
+      {
+        "id": 38957,
+        "answer": "(a)-(ii),(b)-(iii), (c)- (iv), (d)-(i)",
+        "correct": false
+      },
+      {
+        "id": 38958,
+        "answer": "(a)-(iv),(b)-(iii), (c)- (ii), (d)-(i)",
+        "correct": false
+      },
+      {
+        "id": 38959,
+        "answer": "(a)-(iii),(b)-(iv), (c)- (ii), (d)-(i)",
+        "correct": true
+      },
+      {
+        "id": 38960,
+        "answer": "(a)-(iii),(b)-(iv), (c)- (i), (d)-(ii)",
+        "correct": false
+      }
+    ],
+    "explanation": "<ul>\r\n<li><a href=\"https://www.geeksforgeeks.org/blowfish-algorithm-with-examples/\" rel=\"noopener\" target=\"_blank\">Blowfish</a> is a symmetric-key block cipher, it has a 64-bit block size and a variable key length from 32 bits up to 448 bits.\r\n</li>\r\n<li><a href=\"https://www.geeksforgeeks.org/data-encryption-standard-des-set-1/\" rel=\"noopener\" target=\"_blank\">DES</a> we know works by taking a 64-bit value and a 56-bit key.\r\n</li>\r\n<li><a href=\"https://www.geeksforgeeks.org/simplified-international-data-encryption-algorithm-idea/\" rel=\"noopener\" target=\"_blank\">IDEA (International Data Encryption Algorithm)</a> operates on 64-bit blocks using a 128-bit key.\r\n</li>\r\n<li>Since at a time, <a href=\"https://www.geeksforgeeks.org/rc5-encryption-algorithm/\" rel=\"noopener\" target=\"_blank\">RC5</a> uses 2 word blocks, the plain text block size can be 32, 64 or 128 bits.\r\n</li>\r\n</ul>\r\n\r\nOption (C) is correct."
+  },
+  {
+    "id": 9724,
+    "question": "The boolean expression A’⋅B+A.B’+A.B is equivalent to",
+    "answers": [
+      { "id": 38961, "answer": "A+B", "correct": true },
+      { "id": 38962, "answer": "A.B", "correct": false },
+      { "id": 38963, "answer": "(A+B)’", "correct": false },
+      { "id": 38964, "answer": "A’.B", "correct": false }
+    ],
+    "explanation": "<pre>= A'.B + A.B' + A.B\r\n= A'.B + A.B + A.B'\r\n= B(A' + A) + A.B'\r\n= B + A.B'\r\n= (B+A).(B+B')\r\n= A+B </pre>\r\n\r\nOption (A) is correct."
+  },
+  {
+    "id": 9725,
+    "question": "​If a graph (G) has no loops or parallel edges and if the number of vertices(n) in the graph is n≥3, then the graph G is Hamiltonian if\r\n<pre>\r\n<b>(i)</b> deg(v) ≥n/3 for each vertex v\r\n<b>(ii)</b> deg(v) + deg(w) ≥ n whenever v and w are not connected by an edge.\r\n<b>(iii)</b> E (G) ≥ 1/3 (n − 1 )(n − 2 ) + 2 </pre>",
+    "answers": [
+      { "id": 38965, "answer": "(i) and (iii) only", "correct": false },
+      { "id": 38966, "answer": "(ii) and (iii) only", "correct": false },
+      { "id": 38967, "answer": "(iii) only", "correct": false },
+      { "id": 38968, "answer": "(ii) only", "correct": true }
+    ],
+    "explanation": "In an <a href=\"https://www.geeksforgeeks.org/mathematics-euler-hamiltonian-paths/\" rel=\"noopener\" target=\"_blank\">Hamiltonian Graph (G)</a> with no loops and parallel edges:\r\n\r\n<ul>\r\n<li>According to Dirac’s theorem in a n vertex graph, deg (v) ≥ n / 2 for each vertex of G. \r\nSo, statement (i) is false.\r\n\r\n</li>\r\n<li>According to Ore’s theorem deg (v) + deg (w) ≥ n for every n and v not connected by an edge is sufficient condition for a graph to be hamiltonian. \r\nSo, statement (ii) is True.\r\n\r\n</li>\r\n<li>If |E(G)| ≥ 1 / 2 * [(n – 1) (n – 2)] then graph is connected but it doesn’t guaranteed to be Hamiltonian Graph.\r\nSo, statement (iii) is false.\r\n</li>\r\n</ul>\r\n\r\nOption (D) is correct."
+  },
+  {
+    "id": 9726,
+    "question": "Consider a disk pack with 32 surfaces, 64 tracks and 512 sectors per pack. 256 bytes of data are stored in a bit serial manner in a sector. The number of bits required to specify a particular sector in the disk is",
+    "answers": [
+      { "id": 38969, "answer": "19", "correct": false },
+      { "id": 38970, "answer": "20", "correct": true },
+      { "id": 38971, "answer": "18", "correct": false },
+      { "id": 38972, "answer": "22", "correct": false }
+    ],
+    "explanation": "To calculate number of bits required to access a sector, we need to know total number of sectors. \r\n\r\nTotal number of sectors = 32 surfaces X 64 tracks X 512 sectors = 2^20\r\n\r\nSo the number of bits required to access a sector is 20.\r\n\r\nOption (B) is correct."
+  },
+  {
+    "id": 9727,
+    "question": "<p>Match each UML diagram in List 1 with Appropriate description in List 2\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916114500/267.png\" alt=\"\" width=\"688\" height=\"258\" class=\"aligncenter size-full wp-image-486646\" /></p>",
+    "answers": [
+      {
+        "id": 38973,
+        "answer": "(a)-(i), (b)-(iv), (c) -(iii), (d)-(ii)",
+        "correct": false
+      },
+      {
+        "id": 38974,
+        "answer": "(a)-(iv), (b)-(ii), (c) -(i), (d)-(iii)",
+        "correct": false
+      },
+      {
+        "id": 38975,
+        "answer": "(a)-(iv), (b)-(i), (c) -(ii), (d)-(iii)",
+        "correct": true
+      },
+      {
+        "id": 38976,
+        "answer": "(a)-(i), (b)-(iv), (c) -(ii), (d)-(iii)",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9728,
+    "question": "Consider the C/C++ function f() given below:\r\n<pre>void f(char w [ ] )\r\n{\r\n int x = strlen(w); //length of a string\r\n char c;\r\n For (int i = 0; i < x; i++)\r\n  {\r\n    c = w[i];\r\n    w[i] = w[x - i - 1];\r\n    w[x - i - 1] = c;\r\n  }\r\n} </pre>\r\nWhich of the following is the purpose of f() ?",
+    "answers": [
+      {
+        "id": 38977,
+        "answer": "It output the content of the array with the characters rearranged so they are no longer recognized a the words in the original phrase.",
+        "correct": false
+      },
+      {
+        "id": 38978,
+        "answer": "It output the contents of the array with the characters shifted over by one position.",
+        "correct": false
+      },
+      {
+        "id": 38979,
+        "answer": "It outputs the contents of the array in the original order.",
+        "correct": true
+      },
+      {
+        "id": 38980,
+        "answer": "It outputs the contents of the array in the reverse order.",
+        "correct": false
+      }
+    ],
+    "explanation": "Given code,\r<pre>\r\nc = w[i];\r\nw[i] = w[x - i - 1];\r\nw[x - i - 1] = c;\r\n</pre>\r\n\r\nIt swaps the elements which are at ith and (x-i-1)th, so reverse the input order.\r\n\r\nFrom the mid point to end, again same code applied and reverse (revere of input order).\r\nTherefore, original order of input preserve at the end.\r\n\r\nOption (C) is correct.\n"
+  },
+  {
+    "id": 9729,
+    "question": "Data Scrubbing is",
+    "answers": [
+      {
+        "id": 38981,
+        "answer": "A process to upgrade the quality of data after it is moved into a data warehouse.",
+        "correct": false
+      },
+      {
+        "id": 38982,
+        "answer": "A process to upgrade the quality of data before it is moved into a data warehouse.",
+        "correct": true
+      },
+      {
+        "id": 38983,
+        "answer": "A process to lead the data in the warehouse and to create the necessary indexes.",
+        "correct": false
+      },
+      {
+        "id": 38984,
+        "answer": "A process to reject data from the data warehouse and to create necessary indexes.",
+        "correct": false
+      }
+    ],
+    "explanation": "Data scrubbing, also called data cleansing, is the process of amending or removing data in a database that is incorrect, incomplete, improperly formatted, or duplicated. \r\n\r\nThe system should offer an architecture that can cleanse data, record quality events and measure/control quality of data in the data warehouse. \r\n\r\nOption (B) is correct."
+  },
+  {
+    "id": 9730,
+    "question": "Dirty bit is used to show the",
+    "answers": [
+      {
+        "id": 38985,
+        "answer": "Page with low frequency occurrence",
+        "correct": false
+      },
+      { "id": 38986, "answer": "Wrong page", "correct": false },
+      { "id": 38987, "answer": "Page with corrupted data", "correct": false },
+      {
+        "id": 38988,
+        "answer": "Page that is modified after being loaded into cache memory",
+        "correct": true
+      }
+    ],
+    "explanation": "A dirty bit or modified bit is a bit that is associated with a block of computer memory and indicates whether or not the corresponding block of memory has been modified. The dirty bit is set when the processor writes to (modifies) this memory.\r\n\r\nOption (D) is correct."
+  },
+  {
+    "id": 9731,
+    "question": "A legacy software system has 940 modules. The latest release require that 90 of these modules be changed. In addition, 40 new modules were added and 12 old modules were removed. Compute the software maturity index for the system.",
+    "answers": [
+      { "id": 38989, "answer": "0.725", "correct": false },
+      { "id": 38990, "answer": "0.923", "correct": false },
+      { "id": 38991, "answer": "0.849", "correct": true },
+      { "id": 38992, "answer": "0.524", "correct": false }
+    ],
+    "explanation": "If,\r<ul>\r<li>SMI – is the Software Maturity Index value.\r</li>\r<li>Mt – is the number of software functions/modules in the current release.\r</li>\r<li>Fc – is the number of functions/modules that contain changes from the previous release.\r</li>\r<li>Fa – is the number of functions/modules that contain additions to the previous release.\r</li>\r<li>Fd – is the number of functions/modules that are deleted from the previous release.\r</li>\r</ul>\r\rTherefore,\r<pre>\r\nMI = Mt – ( Fa + Fc + Fd) / Mt\r\n\r\nSo,\r\nSMI \r\n= (940 - (40 + 90 + 12 )) /940\r\n= 0.8489\r\n= 0.849 </pre>\r\n\r\nOption (C) is correct.\n"
+  },
+  {
+    "id": 9732,
+    "question": "<p>Match List 1 with List 2 and choose the correct answer from the code given below.\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916115122/358.png\" alt=\"\" width=\"872\" height=\"228\" class=\"aligncenter size-full wp-image-486657\" /></p>",
+    "answers": [
+      {
+        "id": 38993,
+        "answer": "(a)-(iv), (b)-(iii), (c) -(ii), (d)-(i)",
+        "correct": false
+      },
+      {
+        "id": 38994,
+        "answer": "(a)-(i), (b)-(iv), (c) -(iii), (d)-(ii)",
+        "correct": true
+      },
+      {
+        "id": 38995,
+        "answer": "(a)-(iv), (b)-(i), (c) -(ii), (d)-(iii)",
+        "correct": false
+      },
+      {
+        "id": 38996,
+        "answer": "(a)-(i), (b)-(ii), (c) -(iii), (d)-(iv)",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9733,
+    "question": "The relation​ ​ ≤ and < on a boolean algebra are defined as :\r\n<pre>\r\nx ≤ y and only if x ∨ y = y\r\nx < y means x ≤ y but x ≠ y\r\nx ≥ y means y ≤ x and\r\nx > y means y &lt; x  </pre>\r\nConsider the above definitions, which of the following is not true in the boolean algebra ?\r\n<ul>\r\n<li>(i) If x ≤ y and y ≤ z, then x ≤ z\r\n</li>\r\n<li>(ii) If x ≤ y and y ≤ x, then x=y\r\n</li>\r\n<li>(iii) If x < y and y < z, then x ≤ y\r\n</li>\r\n<li>(iv) If x < y and y < z, then x < y\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 38997, "answer": "(iv) only", "correct": false },
+      { "id": 38998, "answer": "(iii) only", "correct": true },
+      { "id": 38999, "answer": "(i) and (ii) only", "correct": false },
+      { "id": 39000, "answer": "(ii) and (iii) only", "correct": false }
+    ],
+    "explanation": "In Boolean algebra, x&lt;y and y&lt;z, then x&lt;y is true but x=y is false."
+  },
+  {
+    "id": 9734,
+    "question": "In a ternary tree, the number of internal nodes of degree 1, 2 and 3 is 4, 3 and 3 respectively. The number of leaf nodes in the ternary tree is",
+    "answers": [
+      { "id": 39001, "answer": "11", "correct": false },
+      { "id": 39002, "answer": "12", "correct": false },
+      { "id": 39003, "answer": "10", "correct": true },
+      { "id": 39004, "answer": "9", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9735,
+    "question": "The four byte IP Address consists of",
+    "answers": [
+      {
+        "id": 39005,
+        "answer": "Neither network nor Host Address",
+        "correct": false
+      },
+      { "id": 39006, "answer": "Network Address", "correct": false },
+      {
+        "id": 39007,
+        "answer": "Both Network and Host Address",
+        "correct": true
+      },
+      { "id": 39008, "answer": "Host Address", "correct": false }
+    ],
+    "explanation": "<a href=\"https://www.geeksforgeeks.org/introduction-of-classful-ip-addressing/\" rel=\"noopener\" target=\"_blank\">IPv4 address</a> is divided into two parts: Network ID, and Host ID.\r\n\r\nThe class of IP address is used to determine the bits used for network ID and host ID and the number of total networks and hosts.\r\n\r\nOption (C) is correct."
+  },
+  {
+    "id": 9736,
+    "question": "Consider the schema R=(A, B, C, D, E, F) on which the following functional dependencies hold :\r\n<pre>\r\nA ➝ B\r\nB,C ➝ D\r\nE ➝ C\r\nD ➝ A </pre>\r\nWhat are the candidate keys of R ?",
+    "answers": [
+      { "id": 39009, "answer": "AEF, BEF and DEF", "correct": true },
+      { "id": 39010, "answer": "AEF, BEF and BCF", "correct": false },
+      { "id": 39011, "answer": "AE and BE", "correct": false },
+      { "id": 39012, "answer": "AE, BE and DE", "correct": false }
+    ],
+    "explanation": "Closure of attributes,\r<pre>\r\nClosure of AEH, i.e. AEH+ = {ABCDEF}\r\nClosure of BEH, i.e. BEH+ = {ABCDEF}\r\nClosure of DEH, i.e. DEH+ = {ABCDEF} </pre>\r\n\r\nOption (A) is correct.\n"
+  },
+  {
+    "id": 9737,
+    "question": "A survey has been conducted on methods of commuter travel. Each respondent was asked to check Bus, Train or Automobile as a major methods of travelling to work. More than one answer was permitted. The results reported were as follows : Bus 30 people; Train 35 people; Automobile 100 people; Bus and Train 15 people; Bus and Automobile 15 people; Train and Automobile 20 people; and all the three methods 5 people. How many people complete the survey form ?",
+    "answers": [
+      { "id": 39013, "answer": "160", "correct": false },
+      { "id": 39014, "answer": "120", "correct": true },
+      { "id": 39015, "answer": "165", "correct": false },
+      { "id": 39016, "answer": "115", "correct": false }
+    ],
+    "explanation": "According to <a href=\"https://www.geeksforgeeks.org/inclusion-exclusion-various-applications/\" rel=\"noopener\" target=\"_blank\">inclusion-exclusion property</a>,\r<pre>\r\n= n(A∪B∪C)\r\n= n(A) + n(B) + n(C) - n(A∩B) - n(B∩C) - n(C∩A) + n(A∩B∩C)\r\n= 30 + 35 + 100 - 15 - 20 - 15 + 5\r\n= 120 </pre>\r\n\r\nWhere,\r\n<ul>\r\n<li>A = Bus\r\n</li>\r\n<li>B = Train\r\n</li>\r\n<li>C = Automobile\r\n</li>\r\n</ul>\r\n\r\nOption (B) is correct.\n"
+  },
+  {
+    "id": 9738,
+    "question": "<p>Consider the graph shown below :\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916120050/435.png\" alt=\"\" width=\"381\" height=\"302\" class=\"aligncenter size-full wp-image-486672\" />\r\n\r\nUse Kruskal’s algorithm to find the minimum spanning tree of the graph. The weight of this minimum spanning tree is</p>",
+    "answers": [
+      { "id": 39017, "answer": "13", "correct": false },
+      { "id": 39018, "answer": "16", "correct": true },
+      { "id": 39019, "answer": "17", "correct": false },
+      { "id": 39020, "answer": "14", "correct": false }
+    ],
+    "explanation": "Spanning tree will be,\r\r<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201022124810/1236.png\" alt=\"\" width=\"311\" height=\"271\" class=\"aligncenter size-full wp-image-502682\" />\r\rThe weight of this minimum spanning tree is,\r<pre>\r\n= 3 + 1 + 2 + 2 + 1 + 2 + 1 + 4\r\n= 16 </pre>\r\n\r\nOption (B) is correct.\n"
+  },
+  {
+    "id": 9739,
+    "question": "Consider the following two C++ programs P​<sub>1</sub>​ and P<sub>2</sub>​ and two statements S<sub>1</sub>​ and S<sub>2</sub>​ about the programs :\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916120634/629.png\" alt=\"\" width=\"595\" height=\"343\" class=\"aligncenter size-full wp-image-486676\" />\r\n\r\n<pre>\r\n<b>S​<sub>1</sub> :</b> P<sub>1</sub>​ prints out 3\r\n<b>S​<sub>2</sub> :</b> P​<sub>2</sub> prints out 4:2\r\n</pre>\r\nWhat can you say about the statement S​<sub>1</sub>​ and S<sub>2</sub>​ ?",
+    "answers": [
+      {
+        "id": 39021,
+        "answer": "<p>Neither S​<sub>1</sub>​ nor S<sub>2</sub>​ is true</p>",
+        "correct": false
+      },
+      {
+        "id": 39022,
+        "answer": "<p>Only S​<sub>1</sub>​ is true</p>",
+        "correct": true
+      },
+      {
+        "id": 39023,
+        "answer": "<p>Only S​<sub>2</sub>​ is true</p>",
+        "correct": false
+      },
+      {
+        "id": 39024,
+        "answer": "<p>Both S​<sub>1</sub> and S<sub>2</sub>​ are true</p>",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9740,
+    "question": "The grammar S ⟶ (S) | SS | ∈ is ​ not​ suitable for predictive parsing because the grammar is",
+    "answers": [
+      { "id": 39025, "answer": "An Operator Grammar", "correct": false },
+      { "id": 39026, "answer": "Right Recursive", "correct": false },
+      { "id": 39027, "answer": "Left Recursive", "correct": false },
+      { "id": 39028, "answer": "Ambiguous", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9741,
+    "question": "An attribute A of data type varchar(20) has the value ‘xyz’ and attribute B of data type char(20) has the value “Imnop” , then the attribute A has ________ spaces and attribute B has ________ spaces.",
+    "answers": [
+      { "id": 39029, "answer": "20 , 20", "correct": false },
+      { "id": 39030, "answer": "3, 20", "correct": true },
+      { "id": 39031, "answer": "3, 5", "correct": false },
+      { "id": 39032, "answer": "20, 5", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9742,
+    "question": "A binary search tree is constructed by inserting the following numbers in order:\r\n<pre>\r\n60, 25, 72, 15, 30, 68, 101, 13, 18, 47, 70, 34 \r\n</pre>\r\nThe number of nodes is the left subtree is",
+    "answers": [
+      { "id": 39033, "answer": "7", "correct": true },
+      { "id": 39034, "answer": "6", "correct": false },
+      { "id": 39035, "answer": "3", "correct": false },
+      { "id": 39036, "answer": "5", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9743,
+    "question": "<p>A full joint distribution for the Toothache, Cavity and Catch is given in the table below:\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916121659/720.png\" alt=\"\" width=\"536\" height=\"202\" class=\"aligncenter size-full wp-image-486687\" />\r\n\r\nWhich is the probability of Cavity, given evidence of Toothache ?</p>",
+    "answers": [
+      { "id": 39037, "answer": "< 0.2, 0.8 >", "correct": false },
+      { "id": 39038, "answer": "< 0.6, 0.8 >", "correct": false },
+      { "id": 39039, "answer": "< 0.4, 0.8 >", "correct": false },
+      { "id": 39040, "answer": "< 0.6, 0.4 >", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9744,
+    "question": "Consider the singly linked list. What is the worst case time complexity of the best-known algorithm to delete the node a, pointer to this node is q, from the list ?",
+    "answers": [
+      { "id": 39041, "answer": "O(1)", "correct": false },
+      { "id": 39042, "answer": "O(lg n)", "correct": false },
+      { "id": 39043, "answer": "O(n)", "correct": true },
+      { "id": 39044, "answer": "O(n lg n)", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9745,
+    "question": "​Which of the following statement/s is/are true ?\r\n<ul>\r\n<li><b>(i)</b> Facebook has the world’s largest Hadoop cluster.\r\n</li>\r\n<li><b>(ii)</b> Hadoop 2.0 allows live stream processing of real time data.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39045, "answer": "Neither (i) nor (ii)", "correct": false },
+      { "id": 39046, "answer": "Both (i) and (ii)", "correct": true },
+      { "id": 39047, "answer": "(i) only", "correct": false },
+      { "id": 39048, "answer": "(ii) only", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9746,
+    "question": "Consider the following sequence of two transactions on a bank account(A) with initial balance 20,000 that transfers 5,000 to another account (B) and then apply 10% interest.\r\n<pre>\r\n<b>(i)</b> T1 start\r\n<b>(ii)</b> T1 A old=20000 new 15,000\r\n<b>(iii)</b> T1 B old=12000 new=17000\r\n<b>(iv)</b> T1 commit\r\n<b>(v)</b> T2 start\r\n<b>(vi)</b> T2 A old=15000 new=16500\r\n<b>(vii)</b> T2 commit </pre>\r\nSuppose the database system crashes out just before log record (vii) is written. When the system is restricted, which one statement is true of the recovery process ?",
+    "answers": [
+      {
+        "id": 39049,
+        "answer": "We can apply redo and undo operation in arbitrary order because they are idempotent.",
+        "correct": false
+      },
+      {
+        "id": 39050,
+        "answer": "We must redo log record (vi) to set A to 16,500.",
+        "correct": false
+      },
+      {
+        "id": 39051,
+        "answer": "We must undo log record (vi) to set A to 16,500 and then redo log record (ii) and (iii).",
+        "correct": true
+      },
+      {
+        "id": 39052,
+        "answer": "We need not redo records (ii) and (iii) because transaction T1 has committed.",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9747,
+    "question": "Which of the following statement/s is/are true ?\r\n<ul>\r\n<li><b>(i)</b> windows XP supports both peer-peer and client-server networks.\r\n</li>\r\n<li><b>(ii)</b> Windows XP implements Transport protocols as drivers that can be loaded and uploaded from the system dynamically.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39053, "answer": "Both (i) and (ii)", "correct": true },
+      { "id": 39054, "answer": "Neither (i) nor (ii)", "correct": false },
+      { "id": 39055, "answer": "(ii) only", "correct": false },
+      { "id": 39056, "answer": "(i) only", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9748,
+    "question": "Consider the following postfix expression with single digit operands :\r\n<pre>\r\n6 2 3 * / 4 2 * + 6 8 * - </pre>\r\nThe top two elements of the stack after second * is evaluated, are :",
+    "answers": [
+      { "id": 39057, "answer": "6, 3", "correct": false },
+      { "id": 39058, "answer": "8, 1", "correct": true },
+      { "id": 39059, "answer": "8, 2", "correct": false },
+      { "id": 39060, "answer": "6, 2", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9749,
+    "question": "The elements 42, 25, 30, 40, 22, 35, 26 are inserted one by one in the given order into a max-heap. The resultant max-heap is stored in an array implementation as",
+    "answers": [
+      {
+        "id": 39061,
+        "answer": "<42, 35, 40, 22, 25, 26, 30>",
+        "correct": false
+      },
+      {
+        "id": 39062,
+        "answer": "<42, 35, 40, 22, 25, 30, 26>",
+        "correct": false
+      },
+      {
+        "id": 39063,
+        "answer": "<42, 40, 35, 25, 22, 26, 30>",
+        "correct": false
+      },
+      { "id": 39064, "answer": "<42, 40, 35, 25, 22, 30, 26>", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9750,
+    "question": "The host is connected to a department network which is a part of a university network. The university network, in turn, is part of the internet. The largest network, in which the Ethernet address of the host is unique, is",
+    "answers": [
+      { "id": 39065, "answer": "The university network", "correct": false },
+      { "id": 39066, "answer": "The Internet", "correct": true },
+      {
+        "id": 39067,
+        "answer": "The subnet to which the host belongs",
+        "correct": false
+      },
+      { "id": 39068, "answer": "The department network", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9751,
+    "question": "Let r= a(a + b)*, s=aa*b and t=a*b be three regular expressions. Consider the following :\r\n<pre>\r\n<b>(i).</b> L(s) ⊆ L(r) and L(s) ⊆ L(t)\r\n<b>(ii).</b> L(r) ⊆ L(s) and L(s) ⊆ L(t) </pre>\r\n",
+    "answers": [
+      { "id": 39069, "answer": "Only (i) is correct", "correct": true },
+      {
+        "id": 39070,
+        "answer": "Both (i) and (ii) are correct",
+        "correct": false
+      },
+      { "id": 39071, "answer": "Only (ii) is correct", "correct": false },
+      {
+        "id": 39072,
+        "answer": "Neither (i) nor (ii) is correct",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9752,
+    "question": "<p>Match List1 with List 2 and choose the correct answer from the code given below :\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916150827/189.png\" alt=\"\" width=\"544\" height=\"209\" class=\"aligncenter size-full wp-image-486782\" />\r\n\r\nWhere V and E are the number of vertices and edges in graph respectively.</p>",
+    "answers": [
+      {
+        "id": 39073,
+        "answer": "(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)",
+        "correct": false
+      },
+      {
+        "id": 39074,
+        "answer": "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+        "correct": false
+      },
+      {
+        "id": 39075,
+        "answer": "(a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)",
+        "correct": true
+      },
+      {
+        "id": 39076,
+        "answer": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9753,
+    "question": "An agent can improve its performance by",
+    "answers": [
+      { "id": 39077, "answer": "Learning", "correct": true },
+      { "id": 39078, "answer": "Responding", "correct": false },
+      { "id": 39079, "answer": "Observing", "correct": false },
+      { "id": 39080, "answer": "Perceiving", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9754,
+    "question": "The clustering index is defined on the fields which are of type",
+    "answers": [
+      { "id": 39081, "answer": "key and ordering", "correct": false },
+      { "id": 39082, "answer": "key and non-ordering", "correct": false },
+      { "id": 39083, "answer": "non-key and ordering", "correct": true },
+      { "id": 39084, "answer": "non-key and non-ordering", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9755,
+    "question": "The second smallest of n elements can be found with _______ comparisons in worst case.",
+    "answers": [
+      { "id": 39085, "answer": "n + ceil(lg n) -2", "correct": true },
+      { "id": 39086, "answer": "n-1", "correct": false },
+      { "id": 39087, "answer": "lg n", "correct": false },
+      { "id": 39088, "answer": "3n/1", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9756,
+    "question": "​Suppose that everyone in a group of N people wants to communicate secretly with (N-1) other people using symmetric key cryptographic system. The communication between any two persons should not be decodable by the others in the group. The number of keys required in the system as a whole to satisfy the confidentiality requirement is",
+    "answers": [
+      { "id": 39089, "answer": "2N", "correct": false },
+      { "id": 39090, "answer": "N(N-1)", "correct": false },
+      { "id": 39091, "answer": "N(N-1)/2", "correct": true },
+      { "id": 39092, "answer": "<p>(N-1)​<sup>2</sup></p>", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9757,
+    "question": "What does the following java function perform ? (Assume int occupies four bytes of storage)\r\n<pre>\r\nPublic static int f(int a) {\r\n  //Pre-conditions : a>0 and no overflow/underflow occurs\r\n  int b = 0;\r\n  for (int i = 0; i < 32; i++) {\r\n    b = b << 1;\r\n    b = b | (a & 1);\r\n    a = a >>> 1; // This is a logical shift\r\n  }\r\n  Return b;\r\n}\r\n</pre> ",
+    "answers": [
+      {
+        "id": 39093,
+        "answer": "Return the int that represents the number of 0’s in the binary representation of integer a.",
+        "correct": false
+      },
+      {
+        "id": 39094,
+        "answer": "Return the int that represents the number of 1’s in the binary representation of integer a.",
+        "correct": false
+      },
+      {
+        "id": 39095,
+        "answer": "Return the int that has the reversed binary representation of integer a.",
+        "correct": true
+      },
+      {
+        "id": 39096,
+        "answer": "Return the int that has the binary representation of integer a.",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9758,
+    "question": "Consider the following x86 - assembly language instructions :\r\n<pre>\r\nMOV AL, 153\r\nNEG AL </pre>\r\nThe contents of the destination register AL (in 8-bit binary notation), the status of Carry Flag(CF) and Sign Flag(SF) after the execution of above instructions, are",
+    "answers": [
+      {
+        "id": 39097,
+        "answer": "AL = 0110 0110; CF = 0; SF =0",
+        "correct": true
+      },
+      {
+        "id": 39098,
+        "answer": "AL = 0110 0111; CF = 0; SF =1",
+        "correct": false
+      },
+      {
+        "id": 39099,
+        "answer": "AL = 0110 0110; CF = 1; SF =1",
+        "correct": false
+      },
+      {
+        "id": 39100,
+        "answer": "AL = 0110 0111; CF = 1; SF =0",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9759,
+    "question": "In mathematical logic, which of the following are statements ?\r\n<ul>\r\n<li><b>(i)</b> There will be snow in January\r\n</li>\r\n<li><b>(ii)</b> What is the time now ?\r\n</li>\r\n<li><b>(iii)</b> Today is Sunday\r\n</li>\r\n<li><b>(iv)</b> You must study Discrete Mathematics.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39101, "answer": "(iii) and (iv)", "correct": false },
+      { "id": 39102, "answer": "(i) and (ii)", "correct": false },
+      { "id": 39103, "answer": "(i) and (iii)", "correct": true },
+      { "id": 39104, "answer": "(ii) and (iv)", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9760,
+    "question": "In Linux operating system environment ________ command is used to print a file.",
+    "answers": [
+      { "id": 39105, "answer": "print", "correct": false },
+      { "id": 39106, "answer": "lpr", "correct": true },
+      { "id": 39107, "answer": "ptr", "correct": false },
+      { "id": 39108, "answer": "pr", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9761,
+    "question": "Consider the language L given by\r\n<pre>L = { 2<sup>nk</sup> | k > 0 , and n is non − negative integer number } </pre>\r\nThe minimum number of states of finite automaton which accept the language L is",
+    "answers": [
+      { "id": 39109, "answer": "n", "correct": false },
+      { "id": 39110, "answer": "n+1", "correct": true },
+      { "id": 39111, "answer": "<p>2<sup>n</sup></p>", "correct": false },
+      { "id": 39112, "answer": "n (n + 1 )/2", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9762,
+    "question": "Which of the following problem is decidable for recursive language (L) ?",
+    "answers": [
+      { "id": 39113, "answer": "Is L = ф ?", "correct": false },
+      {
+        "id": 39114,
+        "answer": "Is w∈L, where w is a string ?",
+        "correct": true
+      },
+      {
+        "id": 39115,
+        "answer": "Is L=R, where R is given regular set ?",
+        "correct": false
+      },
+      { "id": 39116, "answer": "Is L = Σ* ?", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9763,
+    "question": "Consider the following Grammar G :\r\n<pre>\r\nS ➝ A | B\r\nA➝ a | c\r\nB➝ b | c </pre>\r\nWhere {S, A, B} is the set of non-terminals, {a,b,c} is the set of terminals.\r\nWhich of the following statement(s) is/are correct ?\r\n<ul>\r\n<li><b>S​1​ :</b> LR(1) can parse all strings that are generated using grammar G.\r\n</li>\r\n<li><b>S2​ :</b> LL(1) can parse all strings that are generated using grammar G.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39117, "answer": "Both S​1​ and S​2", "correct": false },
+      { "id": 39118, "answer": "Only S​2", "correct": false },
+      { "id": 39119, "answer": "Neither S​1​ nor S​2", "correct": true },
+      { "id": 39120, "answer": "Only S​1", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9764,
+    "question": "Consider the statements below :\r\n<pre>\"There is a country that borders both India and Nepal.\" </pre>\r\nWhich of the following represents the above sentence correctly ?\r\n",
+    "answers": [
+      {
+        "id": 39121,
+        "answer": "∃c Border(Country(c), India ∧ Nepal)",
+        "correct": false
+      },
+      {
+        "id": 39122,
+        "answer": "∃c Country(c) ∧ Border(c, India) ∧ Border(c, Nepal)",
+        "correct": true
+      },
+      {
+        "id": 39123,
+        "answer": "[∃c Country(c)] ⇒ [Border(c,India) ∧ Border(c, Nepal)]",
+        "correct": false
+      },
+      {
+        "id": 39124,
+        "answer": "∃c Country(c) ⇒ [ Border(c, India) ∧ Border(c, Nepal)]",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9765,
+    "question": "Suppose for a process P, reference to pages in order are 1, 2, 4, 5,2,1,2,4. Assume that main memory can accommodate 3 pages and the main memory has already pages 1 and 2 in the order 1 - first, 2- second. At this moment, assume FIFO Page Replacement Algorithm is used then the number of page faults that occur to complete the execution of process P is",
+    "answers": [
+      { "id": 39125, "answer": "6", "correct": false },
+      { "id": 39126, "answer": "4", "correct": false },
+      { "id": 39127, "answer": "3", "correct": false },
+      { "id": 39128, "answer": "5", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9766,
+    "question": "Consider the following recursive Java function f that takes two long arguments and returns a float value :\r\n<pre>\r\npublic static float f(long m, long n) {\r\n  float result = (float) m / (float) n;\r\n  if (m < 0 || n < 0)\r\n    return 0⋅ 0 f;\r\n  else\r\n    result += f(m * 2, n * 3);\r\n  result result;\r\n}\r\n</pre>\r\nWhich of the following integers best approximates the value of f(2,3) ?",
+    "answers": [
+      { "id": 39129, "answer": "0", "correct": false },
+      { "id": 39130, "answer": "3", "correct": false },
+      { "id": 39131, "answer": "1", "correct": false },
+      { "id": 39132, "answer": "2", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9767,
+    "question": "Consider R to be any regular language and L​1​.L​2​ be any two context-free languages Which one of the following is correct ?",
+    "answers": [
+      {
+        "id": 39133,
+        "answer": "(L1 ⋃ L2 ) − R is context free",
+        "correct": false
+      },
+      { "id": 39134, "answer": "L1 − R is context free", "correct": true },
+      { "id": 39135, "answer": "L1 is context free", "correct": false },
+      { "id": 39136, "answer": "L1 ⋂ L2 is context free", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9768,
+    "question": "Consider the following boolean equations :\r\n<pre><b>(i).</b> ​ wx + w(x + y) + x(x + y) = x+wy\r\n<b>(ii).</b> (wx’(y+xz’)+w’x’)y = x’y </pre>\r\nWhat can you say about the above equations ?",
+    "answers": [
+      { "id": 39137, "answer": "Both (i) and (ii) are true", "correct": true },
+      {
+        "id": 39138,
+        "answer": "(i) is true and (ii) is false",
+        "correct": false
+      },
+      {
+        "id": 39139,
+        "answer": "Both (i) and (ii) are false",
+        "correct": false
+      },
+      {
+        "id": 39140,
+        "answer": "(i) is false and (ii) is true",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9769,
+    "question": "Consider the following statements :\r\n<ul>\r\n<li><b>(i)</b> Auto increment addressing mode is useful in creating self-relocating code.\r\n</li>\r\n<li><b>(ii)</b> If auto addressing mode is included in an instruction set architecture, then an additional ALU is required for effective address calculation.\r\n</li>\r\n<li><b>(iii)</b> In auto increment addressing mode, the amount of increment depends on the size of the data item accessed.\r\n</li>\r\n</ul>\r\nWhich of the above statements is/are true ?",
+    "answers": [
+      { "id": 39141, "answer": "(iii) only", "correct": true },
+      { "id": 39142, "answer": "(ii) and (iii) only", "correct": false },
+      { "id": 39143, "answer": "(i) and (ii) only", "correct": false },
+      { "id": 39144, "answer": "(ii) only", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9770,
+    "question": "<p>Find the boolean expression for the logic circuit shown below :\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916163726/190.png\" alt=\"\" width=\"599\" height=\"233\" class=\"aligncenter size-full wp-image-486891\" />\r\n\r\n(1-NAND gate, 2-NOR gate, 3-NOR gate)</p>",
+    "answers": [
+      { "id": 39145, "answer": "AB", "correct": true },
+      { "id": 39146, "answer": "AB’", "correct": false },
+      { "id": 39147, "answer": "A’B’", "correct": false },
+      { "id": 39148, "answer": "A’B", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9771,
+    "question": "The decimal floating point number -40.1 represented using IEEE-754 32-bit representation and written in hexadecimal form is",
+    "answers": [
+      { "id": 39149, "answer": "0xC2206000", "correct": false },
+      { "id": 39150, "answer": "0xC2006666", "correct": false },
+      { "id": 39151, "answer": "0xC2006000", "correct": false },
+      { "id": 39152, "answer": "0xC2206666", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9772,
+    "question": "Consider two sequences X and Y :\r\n<pre>\r\nX = <0,1,2,1,3,0,1 >\r\nY = <1,3,2,0,1,0 > </pre>\r\nThe length of longest common subsequence between X and Y is",
+    "answers": [
+      { "id": 39153, "answer": "4", "correct": true },
+      { "id": 39154, "answer": "2", "correct": false },
+      { "id": 39155, "answer": "3", "correct": false },
+      { "id": 39156, "answer": "5", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9773,
+    "question": "Consider the following method :\r\n<pre>\r\nint f(int m, int n, boolean x, boolean y) {\r\n  int res = 0;\r\n  if (m < 0) {\r\n    res = n - m;\r\n  } else if (x || y) {\r\n    res = -1;\r\n    if (n == m) {\r\n      res = 1;\r\n    }\r\n  } else {\r\n    res = n;\r\n  }\r\n  return res;\r\n} /*end of f */\r\n</pre>\r\nIf P is the minimum number of tests to achieve full statement coverage for f() and Q is the minimum number of tests to achieve full branch coverage for f(), then (P,Q) =",
+    "answers": [
+      { "id": 39157, "answer": "(3,4)", "correct": true },
+      { "id": 39158, "answer": "(3,2)", "correct": false },
+      { "id": 39159, "answer": "(2,3)", "correct": false },
+      { "id": 39160, "answer": "(4,3)", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9774,
+    "question": "__________ system call creates new process in Unix.",
+    "answers": [
+      { "id": 39161, "answer": "fork", "correct": true },
+      { "id": 39162, "answer": "fork new", "correct": false },
+      { "id": 39163, "answer": "create", "correct": false },
+      { "id": 39164, "answer": "create new", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9775,
+    "question": "Use Dual Simplex Method to solve the following problem :\r\nMaximize \r\n<pre>z = -2x​<sub>1</sub>​ -3x<sub>2</sub> </pre>\r\nsubject to:\r\n<pre>\r\nx​<sub>1</sub>​ + x<sub>2</sub>​ ≥ 2\r\n2x​<sub>1</sub>​ + x<sub>2</sub>​ ≤ 10\r\nx​<sub>1</sub> + x<sub>2</sub>​ ≤ 8\r\nx​<sub>1</sub>​, x<sub>2</sub>​ ≥ 0\r\n</pre>",
+    "answers": [
+      {
+        "id": 39165,
+        "answer": "<p>x​<sub>1</sub>​ = 6, x<sub>2</sub>​ =2 and z = -18</p>",
+        "correct": false
+      },
+      {
+        "id": 39166,
+        "answer": "<p>x​<sub>1</sub>​ = 2, x<sub>2</sub>​ = 6 and z = -22</p>",
+        "correct": false
+      },
+      {
+        "id": 39167,
+        "answer": "<p>x<sub>1</sub>​ = 2, x<sub>1</sub>​ = 0 and z = -4</p>",
+        "correct": true
+      },
+      {
+        "id": 39168,
+        "answer": "<p>x<sub>1</sub>​ = 0, x​<sub>1</sub>​ = 2 and z = -6</p>",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9776,
+    "question": "Consider the midpoint (or Bresenham) algorithm for rasterizing lines given below :\r\n<pre>\r\n<b>(1)</b> Input (x​ 1​ ,y​ 1​ ) and (x​ 2​ ,y​ 2​ )\r\n<b>(2)</b> y=y​ 1\r\n<b>(3)</b> d=f(x​ 1​ +1, y​ 1​ +1⁄2) // f is the implicit form of a line\r\n<b>(4)</b> for x=x​ 1​ to x​ 2\r\n<b>(5)</b> do\r\n<b>(6)</b> plot(x,y)\r\n<b>(7)</b> if(d<0)\r\n<b>(8)</b> then\r\n<b>(9)</b> y=y+1\r\n<b>(10)</b> d=d+(y​ 1​ - y​ 2​ ) + (x​ 2​ - x​ 1​ )\r\n<b>(11)</b> else\r\n<b>(12)</b> d=d+(y​ 1​ - y​ 2​ )\r\n<b>(13)</b> end\r\n<b>(14)</b> end </pre>\r\nWhich statements are true ?\r\n<ul>\r\n<li><b>P:</b> For a line with slope m>1, we should change the outer loop in line (4) to be over y.\r\n</li>\r\n<li><b>Q:</b> Lines (10) and (12) update the decision variable d through an incremental evaluation of the line equation f.\r\n</li>\r\n<li><b>R:</b> The algorithm fails if d is ever 0.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39169, "answer": "Q and R only", "correct": false },
+      { "id": 39170, "answer": "P only", "correct": false },
+      { "id": 39171, "answer": "P and Q only", "correct": true },
+      { "id": 39172, "answer": "P, Q and R", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9777,
+    "question": "In PERT/CPM, the merge event represents___________ of two or more events.",
+    "answers": [
+      { "id": 39173, "answer": "splitting", "correct": false },
+      { "id": 39174, "answer": "completion", "correct": true },
+      { "id": 39175, "answer": "beginning", "correct": false },
+      { "id": 39176, "answer": "joining", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9778,
+    "question": "A box contains six red balls and four green balls. Four balls are selected at random from the box. What is the probability that two of the selected balls will be red and two will be green ?",
+    "answers": [
+      { "id": 39177, "answer": "1/35", "correct": false },
+      { "id": 39178, "answer": "1/14", "correct": false },
+      { "id": 39179, "answer": "1/9", "correct": false },
+      { "id": 39180, "answer": "3/7", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9779,
+    "question": "A process residing in main memory and ready and waiting for execution, is kept on",
+    "answers": [
+      { "id": 39181, "answer": "Job Queue", "correct": false },
+      { "id": 39182, "answer": "Execution Queue", "correct": false },
+      { "id": 39183, "answer": "Wait Queue", "correct": false },
+      { "id": 39184, "answer": "Ready Queue", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9780,
+    "question": "<p>Consider the following minimax game tree search\r\n\r\n<img src=\"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200916171228/268.png\" alt=\"\" width=\"935\" height=\"426\" class=\"aligncenter size-full wp-image-486948\" />\r\n\r\nWhat will be the value propagated at the root ?</p>",
+    "answers": [
+      { "id": 39185, "answer": "6", "correct": false },
+      { "id": 39186, "answer": "3", "correct": false },
+      { "id": 39187, "answer": "5", "correct": true },
+      { "id": 39188, "answer": "4", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9781,
+    "question": "The solution of recurrence relation : T(n)=2T(sqrt(n))+lg(n) is",
+    "answers": [
+      { "id": 39189, "answer": "O(lg (n) lg(n))", "correct": false },
+      { "id": 39190, "answer": "O(lg (n))", "correct": false },
+      { "id": 39191, "answer": "O(n lg (n))", "correct": false },
+      { "id": 39192, "answer": "O(lg (n) lg(lg(n)))", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9782,
+    "question": "​Which of the following is not one of the principles of agile software development method ?",
+    "answers": [
+      { "id": 39193, "answer": "Following the plan", "correct": true },
+      { "id": 39194, "answer": "Embrace change", "correct": false },
+      { "id": 39195, "answer": "Customer involvement", "correct": false },
+      { "id": 39196, "answer": "Incremental delivery", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9783,
+    "question": "​In 3D Graphics, which of the following statement/s is/are true ?\r\n<ul>\r\n<li><b>P:</b> Back-face culling is an example of an image-precision visible-surface determination.\r\n</li>\r\n<li><b>Q:</b> Z-Buffer is a 16-bit, 32-bit, or 64-bit field associated with each pixel in a frame buffer that can be used to determine the visible surface at each pixel.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39197, "answer": "P only", "correct": false },
+      { "id": 39198, "answer": "Q only", "correct": true },
+      { "id": 39199, "answer": "Neither P nor Q", "correct": false },
+      { "id": 39200, "answer": "P and Q", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9784,
+    "question": "​ ________ command is used to remove a relation from an SQL database.",
+    "answers": [
+      { "id": 39201, "answer": "Update table", "correct": false },
+      { "id": 39202, "answer": "Remove table", "correct": false },
+      { "id": 39203, "answer": "Delete table", "correct": false },
+      { "id": 39204, "answer": "Drop table", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9785,
+    "question": "Suppose a cloud contains software stack such as Operating system, Application software, etc. This model is referred as _________ model.",
+    "answers": [
+      { "id": 39205, "answer": "SaaS", "correct": true },
+      { "id": 39206, "answer": "IaaS", "correct": false },
+      { "id": 39207, "answer": "MaaS", "correct": false },
+      { "id": 39208, "answer": "PaaS", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9786,
+    "question": "​Which of the following statements are true ?\r\n<ul>\r\n<li><b>(i)</b> Every logic network is equivalent to one using just NAND gates or just NOR gates.\r\n</li>\r\n<li><b>(ii)</b> Boolean expressions and logic networks correspond to labelled acyclic digraphs.\r\n</li>\r\n<li><b>(iii)</b> No two Boolean algebras with n atoms are isomorphic.\r\n</li>\r\n<li><b>(iv)</b> Non-zero elements of finite Boolean algebras are not uniquely expressible as joins of atoms.\r\n</li>\r\n</ul>",
+    "answers": [
+      { "id": 39209, "answer": "(i) and (iv) only", "correct": false },
+      { "id": 39210, "answer": "(i) and (ii) only", "correct": true },
+      { "id": 39211, "answer": "(i), (ii) and (iii) only", "correct": false },
+      { "id": 39212, "answer": "(ii), (iii) and (iv) only", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 9787,
+    "question": "Software products need perfective maintenance for which of the following reasons ?",
+    "answers": [
+      {
+        "id": 39213,
+        "answer": "To rectify bugs observed while the system is in use.",
+        "correct": false
+      },
+      {
+        "id": 39214,
+        "answer": "When the customers need the product to run on new platforms",
+        "correct": false
+      },
+      {
+        "id": 39215,
+        "answer": "To support the new features that users want it to support",
+        "correct": true
+      },
+      {
+        "id": 39216,
+        "answer": "To overcome wear and tear caused by the repeated use of the software.",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  }
+]

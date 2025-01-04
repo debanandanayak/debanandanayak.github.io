@@ -1,0 +1,773 @@
+[
+  {
+    "id": 7714,
+    "question": "Consider a set A = {1, 2, 3, ........, 1000}. How many members of A shall be divisible by 3 or by 5 or by both 3 and 5?",
+    "answers": [
+      { "id": 30959, "answer": "533", "correct": false },
+      { "id": 30960, "answer": "599", "correct": false },
+      { "id": 30961, "answer": "467", "correct": true },
+      { "id": 30962, "answer": "66", "correct": false }
+    ],
+    "explanation": "From set A numbers {3,6,9,........999} which are divisible by 3 are 999 / 3 (A)= 333 .\r\nFrom set A numbers {5,10,......995,1000} which are divisible by 5 are 1000 / 5 (B)= 200.\r\nFrom set A numbers {15, 30, ...990} which are divisible by 3 and 5 are 990 / 3 * 5 (A ∧ B)= 990 / 15 = 66.\r\nSo, numbers divisible by 3 or by 5 or by both 3 and 5:\r\n(A ∨ B) = A + B - (A ∧ B)\r\n(A ∨ B) = 333 + 200 - 67.\r\n(A ∨ B) = 467.\r\nSo, option (C) is correct.\r\n\r\n"
+  },
+  {
+    "id": 6355,
+    "question": "A certain tree has two vertices of degree 4, one vertex of degree 3 and one vertex of degree 2. If the other vertices have degree 1, how many vertices are there in the graph?",
+    "answers": [
+      { "id": 25549, "answer": "5", "correct": false },
+      { "id": 25550, "answer": "n - 3", "correct": false },
+      { "id": 25551, "answer": "20", "correct": false },
+      { "id": 25552, "answer": "11", "correct": true }
+    ],
+    "explanation": "There are 2 vertices of degree 4, 1 vcertex of degree 3, 1 vcertex of degree 2 and vertex of degree one is unknown.\r\nLet's assume k be the nof vertex of degree one.\r\nTotal vertex = 2 + 1 + 1 + k = k + 4.\r\nNumber of edges = vertex - 1\r\ni.e. k + 4 - 1\r\n= k + 3.\r\nNow apply handshaking lemma(For more information on handshaking lemma Refer:<a href=\"https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/\" rel=\"noopener\" target=\"_blank\">Handshaking Lemma and Interesting Tree Properties</a>)\r\n2 * 4 + 1 * 3 + 1 * 2 + 1 * K = 2 * (No of edges)\r\ni.e. 13 + k = 2 * (k + 3)\r\nk = 7.\r\nTotal vertex = 7 + 4 = 11.\r\nSo, option (D) is correct.\r\n    "
+  },
+  {
+    "id": 8955,
+    "question": "<p>Consider the Graph shown below:\r\n<img src=\"https://www.cdn.geeksforgeeks.org/wp-content/uploads/Screenshot-from-2018-06-22-132721.png\" alt=\"\"  class=\"alignnone size-medium wp-image-207434\" />\r\nThis graph is a __________.</p>",
+    "answers": [
+      { "id": 35869, "answer": "Complete Graph", "correct": false },
+      { "id": 35870, "answer": "Bipartite Graph", "correct": false },
+      { "id": 35871, "answer": "Hamiltonian Graph", "correct": true },
+      { "id": 35872, "answer": "All of the above", "correct": false }
+    ],
+    "explanation": "There is no edge between D and B , A and C and one more thing for complete graph edge must be n * (n - 1) / 2 which is not valid in given graph.\r\nIf a graph is two colorable then it is bipartite but this graph is not bipartite.\r\nAccording to Dirac's Theorem If each vertex have degree greater then n / 2 then it is Hamiltonian For more information on Hamiltonian Refer:<a href=\"https://www.geeksforgeeks.org/mathematics-euler-hamiltonian-paths/\" rel=\"noopener\" target=\"_blank\">Mathematics | Euler and Hamiltonian Paths</a>\r\nOption (C) is correct.\r\n"
+  },
+  {
+    "id": 5340,
+    "question": "A computer program selects an integer in the set {k : 1 ≤ k ≤ 10,00,000} at random and prints out the result. This process is repeated 1 million times. What is the probability that the value k = 1 appears in the printout atleast once?",
+    "answers": [
+      { "id": 21634, "answer": "0.5", "correct": false },
+      { "id": 21635, "answer": "0.704", "correct": false },
+      { "id": 21636, "answer": "0.632121", "correct": true },
+      { "id": 21637, "answer": "0.68", "correct": false }
+    ],
+    "explanation": "<p>Favorable outcome  k = 1\r\nTotal outcome = 1000000 = 10<sup>6</sup>\r\nProbability of k = 1;\r\nProbability =  favorable outcome / total outcome \r\n= 1 / 10<sup>6</sup> = 10<sup>-6</sup>\r\nProbability of k != 1:\r\n= 1 - Probability of k = 1;\r\n1 - 10<sup>-6</sup> = 0.999\r\nProbability that k = 1 is never printed in all 10<sup>6</sup> printouts:\r\n= 0.999*0.999*.......0.9999 (10<sup>6</sup> time)\r\n= 0.999<sup>10<sup>6</sup></sup>\r\nProbability that 1 is printed at least once:\r\n= 1- probability that 1 is never printed\r\n= 1-0.99910^6\r\n=0.6321\r\nSo, option (C) is correct.</p>"
+  },
+  {
+    "id": 6283,
+    "question": "<p>If we define the functions f, g and h that map R into R by :\r\nf(x) = x<sup>4</sup> , g(x) = √(x<sup>2</sup> + 1), h(x) = x<sup>2</sup> + 72, then the value of the composite functions ho(gof) and (hog)of are given as</p>",
+    "answers": [
+      {
+        "id": 25261,
+        "answer": "<p>x<sup>8</sup> – 71 and x<sup>8</sup> – 71</p>",
+        "correct": false
+      },
+      {
+        "id": 25262,
+        "answer": "<p>x<sup>8</sup>– 73 and x<sup>8</sup> – 73</p>",
+        "correct": false
+      },
+      {
+        "id": 25263,
+        "answer": "<p>x<sup>8</sup> + 71 and x<sup>8</sup> + 71</p>",
+        "correct": false
+      },
+      {
+        "id": 25264,
+        "answer": "<p>x<sup>8</sup> + 73 and x<sup>8</sup> + 73</p>",
+        "correct": true
+      }
+    ],
+    "explanation": "<p>f(x) = x<sup>4</sup>, g(x) = √(x<sup>2</sup> + 1) and h(x) = x<sup>2</sup> + 72\r\nNow ho(gof) = ho√(x<sup>8</sup> + 1)\r\n= x<sup>8</sup> + 72 + 1\r\n= x<sup>8</sup> + 73.\r\nWe have to find (hog)of:\r\n(hog)of = (x<sup>2</sup> + 1) + 72\r\n= x<sup>2</sup> + 73 \r\n= x<sup>8</sup> + 73.\r\nSo, option (D) is correct.\r\n</p>"
+  },
+  {
+    "id": 5784,
+    "question": "The BCD adder to add two decimal digits needs minimum of",
+    "answers": [
+      {
+        "id": 23343,
+        "answer": "6 full adders and 2 half adders",
+        "correct": false
+      },
+      {
+        "id": 23344,
+        "answer": "5 full adders and 3 half adders",
+        "correct": false
+      },
+      {
+        "id": 23345,
+        "answer": "4 full adders and 3 half adders",
+        "correct": true
+      },
+      {
+        "id": 23346,
+        "answer": "5 full adders and 2 half adders",
+        "correct": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 5785,
+    "question": "The Excess-3 decimal code is a self-complementing code because\r\n(1)The binary sum of a code and its 9’s complement is equal to 9.\r\n(2)It is a weighted code.\r\n(3)Complement can be generated by inverting each bit pattern.\r\n(4)The binary sum of a code and its 10’s complement is equal to 9.",
+    "answers": [
+      { "id": 23347, "answer": "(1)", "correct": false },
+      { "id": 23348, "answer": "(2) and (3)", "correct": false },
+      { "id": 23349, "answer": "(1) and (3)", "correct": true },
+      { "id": 23350, "answer": "All are correct.", "correct": false }
+    ],
+    "explanation": "<p>The Excess-3 decimal code is a self-complementing code because the binary sum of a code and its 9’s complement is equal to 9 and complement can be generated by inverting each bit pattern.\r\nSo, option (C) is correct.\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fxIGUxFDxvs?start=1585\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></p>"
+  },
+  {
+    "id": 6572,
+    "question": "How many PUSH and POP operations will be needed to evaluate the following expression by reverse polish notation in a stack machine (A ∗ B) + (C ∗ D / E)?",
+    "answers": [
+      {
+        "id": 26405,
+        "answer": "4 PUSH and 3 POP instructions",
+        "correct": false
+      },
+      {
+        "id": 26406,
+        "answer": "5 PUSH and 4 POP instructions",
+        "correct": true
+      },
+      {
+        "id": 26407,
+        "answer": "6 PUSH and 2 POP instructions",
+        "correct": false
+      },
+      {
+        "id": 26408,
+        "answer": "5 PUSH and 3 POP instructions",
+        "correct": false
+      }
+    ],
+    "explanation": "Reverse polish notation is a system of formula notation without brackets or special punctuation.\r\nTo evaluate (A ∗ B) + (C ∗ D / E):\r\nFirst avoid brackets and punctuation and convert it into postfix form i.e. AB+CDE/*+\r\nNow push AB \r\nOn * pop AB and perform A * B. Now push back the result(say it X).\r\nPush CDE.\r\nOn / pop DE and push back the result(say it Y).\r\nOn * Pop CY and perform * operation and push the result(say it z).\r\nOn + pop XZ and perform + operation and and push back the final answer.\r\nAbove computation include 5 PUSH and 4 POP instructions.\r\nSo, option (B) is correct.\r\n"
+  },
+  {
+    "id": 5786,
+    "question": "The range of representable normalized numbers in the floating point binary fractional representation in a 32-bit word with 1-bit sign, 8-bit excess 128 biased exponent and 23-bit mantissa is",
+    "answers": [
+      {
+        "id": 23351,
+        "answer": "<p>2<sup>-128</sup> to (1 – 2<sup>-23</sup> ) × 2<sup>127</sup> </p>",
+        "correct": false
+      },
+      {
+        "id": 23352,
+        "answer": "<p>(1 – 2 <sup>–23</sup> ) × 2 <sup>–127</sup> to 2<sup>128</sup>  </p>",
+        "correct": false
+      },
+      {
+        "id": 23353,
+        "answer": "<p>(1 – 2 <sup>–23</sup> ) × 2 <sup>–127</sup> to 2<sup> 23</sup></p>",
+        "correct": false
+      },
+      {
+        "id": 23354,
+        "answer": "<p>2 <sup>–129</sup> to (1 – 2 <sup>–23</sup> ) × 2 <sup>127</sup> </p>",
+        "correct": true
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 3853,
+    "question": "The size of the ROM required to build an 8-bit adder / subtractor with mode control, carry input, carry output and two’s complement overflow output is given as",
+    "answers": [
+      { "id": 15844, "answer": "<p>2<sup>16</sup>  × 8</p>", "correct": false },
+      { "id": 15845, "answer": "<p>2 <sup>18 </sup>× 10</p>", "correct": true },
+      { "id": 15846, "answer": "<p>2<sup>16</sup> × 10</p>", "correct": false },
+      { "id": 15847, "answer": "<p>2 <sup>18</sup> × 8</p>", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 2641,
+    "question": "<p>What will be the output of the following ‘C’ code?</p><gfg-tabs data-run-ide=\"false\">\n        <gfg-tab slot=\"tab\">C</gfg-tab>\n        <gfg-panel slot=\"panel\" data-code-lang=\"c\">\n        <code class=\"language-c\"><div class=highlight><pre><span></span><span class=cp>#include</span><span class=w> </span><span class=cpf>&lt;stdio.h&gt;</span>\n\n<span class=kt>int</span><span class=w> </span><span class=nf>main</span><span class=p>()</span>\n<span class=p>{</span>\n<span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>x</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=mi>128</span><span class=p>;</span>\n<span class=w>    </span><span class=n>printf</span><span class=p>(</span><span class=s>&quot;</span><span class=se>\\n</span><span class=s>%d&quot;</span><span class=p>,</span><span class=w> </span><span class=mi>1</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>x</span><span class=o>++</span><span class=p>);</span>\n<span class=w>    </span>\n<span class=w>    </span><span class=k>return</span><span class=w> </span><span class=mi>0</span><span class=p>;</span>\n<span class=p>}</span>\n</pre></div></code>\n        </gfg-panel>\n    </gfg-tabs>",
+    "answers": [
+      { "id": 10971, "answer": "<p>128</p>", "correct": false },
+      { "id": 10972, "answer": "<p>129</p>", "correct": true },
+      { "id": 10973, "answer": "<p>130</p>", "correct": false },
+      { "id": 10974, "answer": "<p>131</p>", "correct": false }
+    ],
+    "explanation": "<p>In the following C program There is post increment operation: So, printf will print 1 + 128 as output. ++ will increment the x value i.e. x = 129. So, option (B) is correct.</p>"
+  },
+  {
+    "id": 4667,
+    "question": "When an array is passed as parameter to a function, which of the following statements is correct?",
+    "answers": [
+      {
+        "id": 18996,
+        "answer": "The function can change values in the original array.",
+        "correct": true
+      },
+      {
+        "id": 18997,
+        "answer": "In C, parameters are passed by value, the function cannot change the original value in the array.",
+        "correct": false
+      },
+      {
+        "id": 18998,
+        "answer": "It results in compilation error when the function tries to access the elements in the array.",
+        "correct": false
+      },
+      {
+        "id": 18999,
+        "answer": "Results in a run time error when the function tries to access the elements in the array.",
+        "correct": false
+      }
+    ],
+    "explanation": "<p>When an array is passed as parameter to a function then the function can change values in the original array.\r\nFor more information on parameter passing Refer:<a href=\"https://www.geeksforgeeks.org/parameter-passing-techniques-in-c-cpp/\" rel=\"noopener\" target=\"_blank\">Parameter Passing Techniques in C/C++</a>\r\nOption (A) is correct.</p>"
+  },
+  {
+    "id": 7451,
+    "question": "Which of the following differentiates between overloaded functions and overridden functions?",
+    "answers": [
+      {
+        "id": 29915,
+        "answer": "Overloading is a dynamic or runtime binding and overridden is a static or compile time binding.",
+        "correct": false
+      },
+      {
+        "id": 29916,
+        "answer": "Overloading is a static or compile time binding and overriding is dynamic or runtime binding.",
+        "correct": true
+      },
+      {
+        "id": 29917,
+        "answer": "Redefining a function in a friend class is called overloading, while redefining a function in a derived class is called as overridden function.",
+        "correct": false
+      },
+      {
+        "id": 29918,
+        "answer": "Redefining a function in a derived class is called function overloading, while redefining a function in a friend class is called function overriding.",
+        "correct": false
+      }
+    ],
+    "explanation": "<p>Overloading is a static or compile time binding and overriding is dynamic or runtime binding. \r\nFor more information on Refer:<a href=\"https://www.geeksforgeeks.org/function-overloading-vs-function-overriding-in-cpp/\" rel=\"noopener\" target=\"_blank\">Function Overloading vs Function Overriding in C++</a>\r\nOption (B) is correct.</p>"
+  },
+  {
+    "id": 8956,
+    "question": "Division operation is ideally suited to handle queries of the type:",
+    "answers": [
+      {
+        "id": 35873,
+        "answer": "customers who have no account in any of the branches in Delhi.",
+        "correct": false
+      },
+      {
+        "id": 35874,
+        "answer": "customers who have an account at all branches in Delhi.",
+        "correct": true
+      },
+      {
+        "id": 35875,
+        "answer": "customers who have an account in atleast one branch in Delhi.",
+        "correct": false
+      },
+      {
+        "id": 35876,
+        "answer": "customers who have only joint account in any one branch in Delhi",
+        "correct": false
+      }
+    ],
+    "explanation": "Division operation is ideally suited to handle queries of the type: \r\n<li>Customers who have an account at all branches in Delhi.</li>\r\n<li>Students enrolled all courses.</li> etc.\r\nSo, option (B) is correct.\r\n"
+  },
+  {
+    "id": 5185,
+    "question": "Which of the following is true ?\r\nI.   Implementation of self-join is possible in SQL with table alias.\r\nII.  Outer-join operation is basic operation in relational algebra.\r\nIII. Natural join and outer join operations are equivalent.",
+    "answers": [
+      { "id": 21022, "answer": "I and II are correct.", "correct": false },
+      { "id": 21023, "answer": "II and III are correct.", "correct": false },
+      { "id": 21024, "answer": "Only III is correct.", "correct": false },
+      { "id": 21025, "answer": "Only I is correct.", "correct": true }
+    ],
+    "explanation": "<li>Implementation of self-join is possible in SQL with table alias.<b>Correct</b></li><li>Outer-join operation is basic operation in relational algebra.<b>Incorrect</b></li><li>Natural join and outer join operations are equivalent.<b>Incorrect</b></li>\r\nSo, option (D) is correct."
+  },
+  {
+    "id": 5041,
+    "question": "What kind of mechanism is to be taken into account for converting a weak entity set into strong entity set in entity-relationship diagram?",
+    "answers": [
+      { "id": 20461, "answer": "Generalization", "correct": false },
+      { "id": 20462, "answer": "Aggregation", "correct": false },
+      { "id": 20463, "answer": "Specialization", "correct": false },
+      { "id": 20464, "answer": "Adding suitable attributes", "correct": true }
+    ],
+    "explanation": "Weak entity is an entity which does not have sufficient attributes to form a primary key.\r\nWeak entity is represented by Double rectangle In an ER Diagram.\r\nIt must be in a 1:M relation.\r\nA member of a weak entity is called a subordinate entity.\r\nFor converting a weak entity set into strong entity set in entity-relationship diagram by simply adding appropriate attributes.\r\nSo, option (D) is correct.\r\n"
+  },
+  {
+    "id": 5127,
+    "question": "The best normal form of relation scheme R(A, B, C, D) along with the set of functional dependencies F = {AB → C, AB → D, C → A, D → B} is",
+    "answers": [
+      { "id": 20801, "answer": "Boyce-Codd Normal form", "correct": false },
+      { "id": 20802, "answer": "Third Normal form", "correct": true },
+      { "id": 20803, "answer": "Second Normal form", "correct": false },
+      { "id": 20804, "answer": "First Normal form", "correct": false }
+    ],
+    "explanation": "<p>Here C-> A (prime attribute -> prime attribute) and D->A (prime attribute -> prime attribute) is partially dependents FDs . This type of FD must not be in <a href=\"https://www.geeksforgeeks.org/boyce-codd-normal-form-bcnf/\" rel=\"noopener\" target=\"_blank\">BCNF</a> and there is no problem with this type of FDs in 3NF. \r\n\r\nOption (B) is correct.</p>"
+  },
+  {
+    "id": 5042,
+    "question": "Identify the minimal key for relational scheme R(A, B, C, D, E) with functional dependencies F = {A → B, B → C, AC → D}",
+    "answers": [
+      { "id": 20465, "answer": "A", "correct": false },
+      { "id": 20466, "answer": "AE", "correct": true },
+      { "id": 20467, "answer": "BE", "correct": false },
+      { "id": 20468, "answer": "CE", "correct": false }
+    ],
+    "explanation": "A<sup>+</sup> = ABCD \r\nBut we can't derive E from A, so We have to add E i A \r\nI.e. AE<sup>+</sup> = ABCDE.\r\nSo, option (B)  is correct."
+  },
+  {
+    "id": 3235,
+    "question": "Convert the following infix expression into its equivalent post fix expression (A + B^ D) / (E – F) + G",
+    "answers": [
+      { "id": 13420, "answer": "ABD^ + EF – / G+", "correct": true },
+      { "id": 13421, "answer": "ABD + ^EF – / G+", "correct": false },
+      { "id": 13422, "answer": "ABD + ^EF / – G+", "correct": false },
+      { "id": 13423, "answer": "ABD^ + EF / – G+", "correct": false }
+    ],
+    "explanation": "(A + B^ D) / (E – F) + G\r\n= (A + B^ D)(E – F)/ + G\r\n=  (A + B^ D)(E – F)/G+\r\n= A + BD^(E – F)/G+\r\n= ABD^+EF-/G+\r\nSo, option (A) is correct."
+  },
+  {
+    "id": 3413,
+    "question": "You have to sort a list L, consisting of a sorted list followed by a few ‘random’ elements. Which of the following sorting method would be most suitable for such a task?",
+    "answers": [
+      { "id": 14114, "answer": "Bubble sort", "correct": false },
+      { "id": 14115, "answer": "Selection sort", "correct": false },
+      { "id": 14116, "answer": "Quick sort", "correct": false },
+      { "id": 14117, "answer": "Insertion sort\r", "correct": true }
+    ],
+    "explanation": "For a sorted list with few random numbers:\r\n<li>Bubble sort will take O(n<sup>2</sup>) time in best case.</li><li>Selection sort will take O(n<sup>2</sup>) time in best case.</li><li>Quick sort will take O(n<sup>2</sup>) time in this case because it is the worst case for quick sort.</li><li>Insertion sort will take O(n)</li>\r\nSo, option (D) is correct."
+  },
+  {
+    "id": 5266,
+    "question": "The directory can be viewed as ________ that translates filenames into their directory entries",
+    "answers": [
+      { "id": 21347, "answer": "Symbol table", "correct": true },
+      { "id": 21348, "answer": "Partition", "correct": false },
+      { "id": 21349, "answer": "Swap space", "correct": false },
+      { "id": 21350, "answer": "Cache", "correct": false }
+    ],
+    "explanation": "The directory can be viewed as symbol table that translates filenames into their directory entries. Symbol table is an important data structure created and maintained by compilers in order to store information about the occurrence of various entities such as variable names, function names, objects, classes, interfaces, etc.\r\nSO, option (A) is correct."
+  },
+  {
+    "id": 4045,
+    "question": "<p dir=\"ltr\"><span>Consider a two dimensional array A[20][10]. Assume 4 words per memory cell, the base address of array A is 100, elements are stored in row-major order and first element is A[0][0]. What is the address of A[11][5] ? </span></p>",
+    "answers": [
+      { "id": 63261, "answer": "<p><span>560</span></p>", "correct": true },
+      { "id": 63262, "answer": "<p><span>460</span></p>", "correct": false },
+      { "id": 63263, "answer": "<p><span>570</span></p>", "correct": false },
+      { "id": 63264, "answer": "<p><span>575</span></p>", "correct": false }
+    ],
+    "explanation": "<p dir=\"ltr\"><span>Element A[11][0] is stored at \"Base Address + 11 * 10 * 4\" which is  \"Base Address + 440\" = 540.  So A[11][5] is stored at 540 + 5*4 = 560.</span></p>"
+  },
+  {
+    "id": 3533,
+    "question": "A full binary tree with n leaves contains",
+    "answers": [
+      { "id": 14589, "answer": "n nodes", "correct": false },
+      {
+        "id": 14590,
+        "answer": "<p>log<sub> 2</sub> n nodes</p>",
+        "correct": false
+      },
+      { "id": 14591, "answer": "2n –1 node", "correct": true },
+      { "id": 14592, "answer": "<p>2 <sup>n</sup> nodes</p>", "correct": false }
+    ],
+    "explanation": " A Binary Tree is full if every node has 0 or 2 children. Following are examples of full binary tree. We can also say a full binary tree is a binary tree in which all nodes except leaves have two children. A full binary tree with n leaves contains  2 * n – 1 nodes.\r\nSo, option (C) is correct.\r\n"
+  },
+  {
+    "id": 5787,
+    "question": "<p dir=\"ltr\"><span>The period of a signal is 10 ms. What is its frequency in Hertz?</span></p>",
+    "answers": [
+      { "id": 83794, "answer": "<p><span>10</span></p>", "correct": false },
+      { "id": 83795, "answer": "<p><span>100</span></p>", "correct": true },
+      { "id": 83796, "answer": "<p><span>1000</span></p>", "correct": false },
+      { "id": 83797, "answer": "<p><span>10000</span></p>", "correct": false }
+    ],
+    "explanation": "<p dir=\"ltr\"><span>We know that frequency = 1 / time period. frequency = 1 / 10 ms = 1 / 10 * 10</span></p><p><sup><span>-3</span></sup></p><p><span>. = 1 / 10</span></p><p><sup><span>-2</span></sup></p><p dir=\"ltr\"><span> = 100. So, option (B) is correct. </span></p>"
+  },
+  {
+    "id": 7695,
+    "question": "In a classful addressing, first four bits in Class A IP address is",
+    "answers": [
+      { "id": 30882, "answer": "1010", "correct": false },
+      { "id": 30883, "answer": "1100", "correct": false },
+      { "id": 30884, "answer": "1011", "correct": false },
+      { "id": 30885, "answer": "1110", "correct": false },
+      {
+        "id": 30886,
+        "answer": "(A) , (B), (C) and (D) are wrong.",
+        "correct": true
+      }
+    ],
+    "explanation": "IP addresses belonging to class A ranges from 1.x.x.x – 126.x.x.x.\r\nIn class A First bit is zero. Address ranges between 1 - 126 i.e. 00000001 - 01111110 (Except 00000000  and 01111111) \r\nSo, none of the option is / are correct."
+  },
+  {
+    "id": 3153,
+    "question": "Which of the following algorithm(s) is/are a broadcast routing algorithm?",
+    "answers": [
+      { "id": 13091, "answer": "Flooding", "correct": false },
+      { "id": 13092, "answer": "Multidestination routing", "correct": false },
+      { "id": 13093, "answer": "Reverse path forwarding", "correct": false },
+      { "id": 13094, "answer": "All of the above", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 3154,
+    "question": "An analog signal has a bit rate of 6000 bps and a baud rate of 2000 baud. How many data elements are carried by each signal element?",
+    "answers": [
+      { "id": 13095, "answer": "0.336 bits/baud", "correct": false },
+      { "id": 13096, "answer": "3 bits/baud", "correct": true },
+      { "id": 13097, "answer": "120,00,000 bits/baud", "correct": false },
+      { "id": 13098, "answer": "None of the above", "correct": false }
+    ],
+    "explanation": "Baud rate = 2000 baud \r\nBit rate = 6000 bps\r\nBits per baud = bit rate / baud rate \r\nBits per baud = 6000 / 2000 = 3 bits per baud.\r\nSo, option (B) is correct.\r\n"
+  },
+  {
+    "id": 7231,
+    "question": "How many distinct stages are there in DES algorithm, which is parameterized by a 56-bit key?",
+    "answers": [
+      { "id": 29041, "answer": "16", "correct": false },
+      { "id": 29042, "answer": "17", "correct": false },
+      { "id": 29043, "answer": "18", "correct": false },
+      { "id": 29044, "answer": "19", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 6153,
+    "question": "Shift-Reduce parsers perform the following:",
+    "answers": [
+      {
+        "id": 24753,
+        "answer": "Shift step that advances in the input stream by K(K > 1) symbols and Reduce step that applies a completed grammar rule to some recent parse trees, joining them together as one tree with a new root symbol.",
+        "correct": false
+      },
+      {
+        "id": 24754,
+        "answer": "Shift step that advances in the input stream by one symbol and Reduce step that applies a completed grammar rule to some recent parse trees, joining them together as one tree with a new root symbol.",
+        "correct": true
+      },
+      {
+        "id": 24755,
+        "answer": "Shift step that advances in the input stream by K(K = 2) symbols and Reduce step that applies a completed grammar rule to form a single tree",
+        "correct": false
+      },
+      {
+        "id": 24756,
+        "answer": "Shift step that does not advance in the input stream and Reduce step that applies a completed grammar rule to form a single tree.",
+        "correct": false
+      }
+    ],
+    "explanation": "<p>Shift step that advances in the input stream by one symbol and Reduce step that applies a completed grammar rule to some recent parse trees, joining them together as one tree with a new root symbol.\r\nFor more information on Shift-Reduce parsers Refer:<a href=\"https://www.geeksforgeeks.org/shift-reduce-parser-compiler/\" rel=\"noopener\" target=\"_blank\">Shift Reduce Parser in Compiler</a>\r\nOption (B) is correct.</p>"
+  },
+  {
+    "id": 6154,
+    "question": "Which of the following is true?",
+    "answers": [
+      {
+        "id": 24757,
+        "answer": "Canonical LR parser is LR (1) parser with single look ahead terminal",
+        "correct": false
+      },
+      {
+        "id": 24758,
+        "answer": "All LR(K) parsers with K > 1 can be transformed into LR(1) parsers.",
+        "correct": false
+      },
+      { "id": 24759, "answer": "Both (A) and (B)", "correct": true },
+      { "id": 24760, "answer": "None of the above", "correct": false }
+    ],
+    "explanation": "<p>Canonical LR parser is LR (1) parser with single look ahead terminal. \r\nAll LR(K) parsers with K > 1 can be transformed into LR(1) parsers.\r\nFor more information on canonical parser and SLR parser Refer:<a href=\"https://www.geeksforgeeks.org/parsing-set-3-slr-clr-and-lalr-parsers/\" rel=\"noopener\" target=\"_blank\">Parsing | Set 3 (SLR, CLR and LALR Parsers)</a>\r\nOption (C) is correct.</p>"
+  },
+  {
+    "id": 6155,
+    "question": "In a two-pass assembler, symbol table is",
+    "answers": [
+      { "id": 24761, "answer": "Generated in first pass", "correct": true },
+      { "id": 24762, "answer": "Generated in second pass", "correct": false },
+      { "id": 24763, "answer": "Not generated at all", "correct": false },
+      {
+        "id": 24764,
+        "answer": "Generated and used only in second pass",
+        "correct": false
+      }
+    ],
+    "explanation": "In a two-pass assembler, symbol table is generated in first pass but it need two pass to scan whole source file. While one pass assembler scan whole file in a go.\r\nSo, option (A) is correct."
+  },
+  {
+    "id": 6094,
+    "question": "Debugger is a program that",
+    "answers": [
+      {
+        "id": 24541,
+        "answer": "allows to examine and modify the contents of registers",
+        "correct": false
+      },
+      {
+        "id": 24542,
+        "answer": "does not allow execution of a segment of program",
+        "correct": false
+      },
+      {
+        "id": 24543,
+        "answer": "allows to set breakpoints, execute a segment of program and display contents of register",
+        "correct": true
+      },
+      { "id": 24544, "answer": "All of the above", "correct": false }
+    ],
+    "explanation": "A debugger is a computer program used by programmers to test and debug a target program. Debuggers may use instruction-set simulators, rather than running a program directly on the processor to achieve a higher level of control over its execution. It also allows to set breakpoints, execute a segment of program and display contents of register.\r\nSo, option (C) is correct."
+  },
+  {
+    "id": 6018,
+    "question": "<p>The following Context-Free Grammar (CFG): S → aB | bA A → a | aS | bAA B → b | bS | aBB will generate (1) odd numbers of a’s and odd numbers of b’s (2) even numbers of a’s and even numbers of b’s (3) equal numbers of a’s and b’s (4) different numbers of a’s and b’s</p>",
+    "answers": [
+      { "id": 24237, "answer": "<p>(1)</p>", "correct": false },
+      { "id": 24238, "answer": "<p>(2) an (3)</p>", "correct": false },
+      { "id": 24239, "answer": "<p>(1), (2) and (3)</p>", "correct": true },
+      { "id": 24240, "answer": "<p>All are correct.</p>", "correct": false }
+    ],
+    "explanation": "<p><strong>Explanation:</strong> The following Context-Free Grammar (CFG): S → aB | bA A → a | aS | bAA B → b | bS | aBB will generate</p><ul><li>odd numbers of a’s and odd numbers of b’s i.e. ab or ba.</li><li>even numbers of a’s and even numbers of b’s i.e. aabb or bbaa</li><li>equal numbers of a’s and b’s i.e.ab, ba bbaa or aabb</li><li>The grammar cannot produce variable numbers of a's and b's. i.e. abb or baa</li></ul><p>Option (C) is correct.<br><br><a href=\"https://www.cdn.geeksforgeeks.org/ugc-net-cs-2014-dec-ii/\">Quiz of this Question</a></p>"
+  },
+  {
+    "id": 7640,
+    "question": "Consider the following justifications for commonly using the two-level CPU scheduling:\r\nI. It is used when memory is too small to hold all the ready processes.\r\nII. Because its performance is same as that of the FIFO.\r\nIII. Because it facilitates putting some set of processes into memory and a choice is made from that.\r\nIV. Because it does not allow to adjust the set of in-core processes.\r\nWhich of the following is true ?",
+    "answers": [
+      { "id": 30668, "answer": "I, III and IV", "correct": false },
+      { "id": 30669, "answer": "I and II", "correct": false },
+      { "id": 30670, "answer": "III and IV", "correct": false },
+      { "id": 30671, "answer": "I and III", "correct": true }
+    ],
+    "explanation": "The two-level CPU scheduling is used when memory is too small to hold all the ready processes because it facilitates putting some set of processes into memory and a choice is made from that.\r\nSo, option (D) is correct.\r\n"
+  },
+  {
+    "id": 3854,
+    "question": "A specific editor has 200 K of program text, 15 K of initial stack, 50 K of initialized data, and 70 K of bootstrap code. If five editors are started simultaneously, how much physical memory is needed if shared text is used?",
+    "answers": [
+      { "id": 15848, "answer": "1135 K", "correct": false },
+      { "id": 15849, "answer": "335 K", "correct": true },
+      { "id": 15850, "answer": "1065 K", "correct": false },
+      { "id": 15851, "answer": "320 K", "correct": false }
+    ],
+    "explanation": "Since 5 editors started simultaneously On 200k of program text along with 15 K of initial stack, 50 K of initialized data, and 70 K of bootstrap code.\r\nTotal physical memory needed = 200k + 15 K + 50 K + 70 K.\r\n= 335 k \r\nSo, option (B) is correct."
+  },
+  {
+    "id": 3042,
+    "question": "Which of the following conditions does not hold good for a solution to a critical section problem ?",
+    "answers": [
+      {
+        "id": 12646,
+        "answer": "No assumptions may be made about speeds or the number of CPUs.",
+        "correct": false
+      },
+      {
+        "id": 12647,
+        "answer": "No two processes may be simultaneously inside their critical sections.",
+        "correct": false
+      },
+      {
+        "id": 12648,
+        "answer": "Processes running outside its critical section may block other processes.",
+        "correct": true
+      },
+      {
+        "id": 12649,
+        "answer": "Processes do not wait forever to enter its critical section.",
+        "correct": false
+      }
+    ],
+    "explanation": "In Critical section problem:\r\n<li> No assumptions may be made about speeds or the number of CPUs.</li><li> No two processes may be simultaneously inside their critical sections.</li><li>Processes running outside its critical section can't block other processes getting enter into critical section.</li><li> Processes do not wait forever to enter its critical section.</li>\r\nFor more information on critical section Refer:<a href=\"https://www.geeksforgeeks.org/g-fact-70/\" rel=\"noopener\" target=\"_blank\">Operating System | Critical Section</a>\r\nOption (C) is correct."
+  },
+  {
+    "id": 3855,
+    "question": "For the implementation of a paging scheme, suppose the average process size be x bytes, the page size be y bytes, and each page entry requires z bytes. The optimum page size that minimizes the total overhead due to the page table and the internal fragmentation loss is given by",
+    "answers": [
+      { "id": 15852, "answer": "x / 2", "correct": false },
+      { "id": 15853, "answer": "xz / 2", "correct": false },
+      { "id": 15854, "answer": "&#8730;(2xz)", "correct": true },
+      { "id": 15855, "answer": "&#8730;(xz) / 2", "correct": false }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 3856,
+    "question": "In a demand paging memory system, page table is held in registers. The time taken to service a page fault is 8 m.sec. if an empty frame is available or if the replaced page is not modified, and it takes 20 m.secs., if the replaced page is modified. What is the average access time to service a page fault assuming that the page to be replaced is modified 70 of the time?",
+    "answers": [
+      { "id": 15856, "answer": "11.6 m.sec.", "correct": false },
+      { "id": 15857, "answer": "16.4 m.sec.", "correct": true },
+      { "id": 15858, "answer": "28 m.sec.", "correct": false },
+      { "id": 15859, "answer": "14 m.sec.", "correct": false }
+    ],
+    "explanation": "Page fault service time(PFST) = 8 msec (empty frame)\r\nPage fault service time(PFST) = 20 msec( page is modified)\r\nPage replacement frequency = 70% = 0.7\r\nPage not modified = 100 - 70 = 30% = 0.3\r\nAverage access time =  (0.3 * 8) + (0.7 * 20) = 2.4 + 14 = 16.4 m.sec\r\nSo, option (B) is correct."
+  },
+  {
+    "id": 6921,
+    "question": "__________ are applied throughout the software process.",
+    "answers": [
+      { "id": 27802, "answer": "Framework activities", "correct": false },
+      { "id": 27803, "answer": "Umbrella activities", "correct": true },
+      { "id": 27804, "answer": "Planning activities", "correct": false },
+      { "id": 27805, "answer": "Construction activities", "correct": false }
+    ],
+    "explanation": "Umbrella activities are applied throughout the software process.\r\nUmbrella activities include:\r\n<li>Document Preparation and Production.</li>\r\n<li>Configuration Management.</li>\r\n<li>Project Tracking and Control.</li>\r\n<li>Quality Assurance.</li>\r\n<li>Formant Technical Review.</li>\r\n<li>Reusability Management.</li>\r\n<li>Measurement.</li>\r\n</li>Risk Management</li>\r\nSo, option (B) is correct."
+  },
+  {
+    "id": 6922,
+    "question": "Requirement Development, Organizational Process Focus, Organizational Training, Risk Management and Integrated Supplier Management are process areas required to achieve maturity level",
+    "answers": [
+      { "id": 27806, "answer": "Performed", "correct": false },
+      { "id": 27807, "answer": "Managed", "correct": false },
+      { "id": 27808, "answer": "Defined", "correct": true },
+      { "id": 27809, "answer": "Optimized", "correct": false }
+    ],
+    "explanation": "Requirement Development, Organizational Process Focus, Organizational Training, Risk Management and Integrated Supplier Management are process areas required to achieve maturity level Defined. A maturity level is a well-defined evolutionary plateau toward achieving a mature software process.\r\nSo, option (C) is correct.\r\n"
+  },
+  {
+    "id": 6923,
+    "question": "The software _________ of a program or a computing system is the structure or structures of the system, which comprise software components, the externally visible properties of those components, and the relationships among them.",
+    "answers": [
+      { "id": 27810, "answer": "Design", "correct": false },
+      { "id": 27811, "answer": "Architecture", "correct": true },
+      { "id": 27812, "answer": "Process", "correct": false },
+      { "id": 27813, "answer": "Requirement", "correct": false }
+    ],
+    "explanation": "The software architecture of a program or a computing system is the structure or structures of the system, which comprise software components, the externally visible properties of those components, and the relationships among them.\r\nSo, option (B) is correct."
+  },
+  {
+    "id": 6924,
+    "question": "Which one of the following set of attributes should not be encompassed by effective software metrics ?",
+    "answers": [
+      { "id": 27814, "answer": "Simple and computable", "correct": false },
+      { "id": 27815, "answer": "Consistent and objective", "correct": false },
+      {
+        "id": 27816,
+        "answer": "Consistent in the use of units and dimensions",
+        "correct": false
+      },
+      {
+        "id": 27817,
+        "answer": "Programming language dependent",
+        "correct": true
+      }
+    ],
+    "explanation": "Software matrices is a measurement of countable software characteristics. It include countable characteristics which are Simple and computable, Consistent and objective and Consistent in the use of units and dimensions. Software matrices is important from performance point of view.\r\nSo, option (D) is correct."
+  },
+  {
+    "id": 6766,
+    "question": "Which one of the following is used to compute cyclomatic complexity?",
+    "answers": [
+      { "id": 27182, "answer": "The number of regions – 1", "correct": false },
+      {
+        "id": 27183,
+        "answer": "E – N + 1, where E is the number of flow graph edges and N is the number of flow graph nodes.",
+        "correct": false
+      },
+      {
+        "id": 27184,
+        "answer": "P – 1, where P is the number of predicate nodes in the flow graph G.",
+        "correct": false
+      },
+      {
+        "id": 27185,
+        "answer": "P + 1, where P is the number of predicate nodes in the flow graph G.",
+        "correct": true
+      }
+    ],
+    "explanation": "<p>Cyclomatic complexity is a software metric used to measure the complexity of a program. These metric, measures independent paths through program source code.\r\nMathematically, it is set of independent paths through the graph diagram. The complexity of the program can be defined as -\r\nV(G) = E - N + 2\r\nWhere, E - Number of edges\r\nN - Number of Nodes\r\nV (G) = P + 1\r\nWhere P = Number of predicate nodes (node that contains condition)\r\nfor more information on Cyclomatic complexity Refer:<a href=\"https://practice.geeksforgeeks.org/problems/what-is-cyclomatic-complexity-explain-with-a-flow-graph\" rel=\"noopener\" target=\"_blank\"> What is Cyclomatic Complexity? Explain with a flow graph</a>\r\nOption (D) is correct.</p>"
+  },
+  {
+    "id": 6767,
+    "question": "Consider the following statements S1 and S2:\r\nS1 : A hard handover is one in which the channel in the source cell is retained and used for a while in parallel with the channel in the target cell.\r\nS2 : A soft handover is one in which the channel in the source cell is released and only then the channel in the target cell is engaged.",
+    "answers": [
+      {
+        "id": 27186,
+        "answer": "S1 is true and S2 is not true.",
+        "correct": false
+      },
+      {
+        "id": 27187,
+        "answer": "S1 is not true and S2 is true.",
+        "correct": false
+      },
+      { "id": 27188, "answer": "Both S1 and S2 are true.", "correct": false },
+      { "id": 27189, "answer": "Both S1 and S2 are not true.", "correct": true }
+    ],
+    "explanation": "<li>A hard handover is one in which the channel in the source cell is released and only then the channel in the target cell is engaged.</li>\r\n<li>A soft handover is one in which the channel in the source cell is retained and used for a while in parallel with the channel in the target cell.</li>\r\nBoth given statement are wrong.\r\nSo, option (D) is correct."
+  },
+  {
+    "id": 8950,
+    "question": "Fact-less fact table in a data warehouse contains",
+    "answers": [
+      { "id": 35849, "answer": "only measures", "correct": false },
+      { "id": 35850, "answer": "only dimensions", "correct": false },
+      { "id": 35851, "answer": "keys and measures", "correct": false },
+      { "id": 35852, "answer": "only surrogate keys", "correct": true }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 8951,
+    "question": "Which e-business model allows consumers to name their own price for products and services?",
+    "answers": [
+      { "id": 35853, "answer": "B2 B", "correct": false },
+      { "id": 35854, "answer": "B2 G", "correct": true },
+      { "id": 35855, "answer": "C2 C", "correct": false },
+      { "id": 35856, "answer": "C2 B", "correct": false }
+    ],
+    "explanation": "<li>In Business to business(B2B) e - business model There is nothing about consumers to name their own price for products and services. Because it deals with requirement of some material to run own production process.</li><li>In Business to government(B 2 G or business to administration B2A) e - business model, There is nothing about consumers to name their own price for products and services. Because it provide a platform for businesses to bid on government opportunities but consumer can't decide price for goods and services.</li><li>In consumer to consumer (C 2 C) e - business model customers are allowed to interact with each other but  can't name their own price for products and services.</li><li>In Consumer to Business (C2B) e-business model allows consumers to name their own price for products and services.</li>\r\nSo, option (B) is correct.\r\n"
+  },
+  {
+    "id": 8952,
+    "question": "__________ model is designed to bring prices down by increasing the number of customers who buy a particular product at once.",
+    "answers": [
+      { "id": 35857, "answer": "Economic Order Quantity", "correct": false },
+      { "id": 35858, "answer": "Inventory", "correct": false },
+      { "id": 35859, "answer": "Data Mining", "correct": false },
+      { "id": 35860, "answer": "Demand-Sensitive Pricing", "correct": true }
+    ],
+    "explanation": "Demand-Sensitive Pricing model is designed to bring prices down by increasing the number of customers who buy a particular product at once.\r\nSo, option (D) is correct."
+  },
+  {
+    "id": 8957,
+    "question": "<!DOCTYPE html>\r\n<html>\r\n<body>\r\n\r\n<p>Match the following:</p>\r\n\r\n<table style=\"width:100%\">\r\n  <tr>\r\n    <td>List - I</th>\r\n    <td>List - II</th>\r\n   \r\n  </tr>\r\n  <tr>\r\n    <td>a. Call control protocol </td>\r\n    <td>i. Interface between Base Transceiver Station (BTS) and Base Station Controller (BSC)</td>\r\n  \r\n  </tr>\r\n  <tr>\r\n    <td>b.  A-bis</td>\r\n    <td>ii. Spread spectrum</td>\r\n</tr>\r\n<tr>\r\n    <td>c. BSMAP</td>\r\n    <td>iii. Connection management</td>\r\n\r\n  </tr>\r\n  <tr>\r\n    <td>d. CDMA</td>\r\n    <td>iv. Works between Mobile Switching Centre (MSC) and Base Station Subsystem (BSS)</td>\r\n\r\n  </tr>\r\n</table>\r\n\r\n</body>\r\n</html>\r\n<p>codes:</p>\r\n\r\n<table style=\"width:100%\">\r\n  <tr>\r\n<td></td>\r\n    <td>(a)</td>\r\n    <td>(b)</td>\r\n<td>(c)</td>\r\n<td>(d)</td>\r\n  \r\n  </tr>\r\n  <tr>\r\n<td>(A)</td>\r\n    <td>(iii) </td>\r\n    <td>(iv)</td>\r\n    <td>(i)</td>\r\n    <td>(ii)</td>\r\n \r\n  </tr>\r\n  <tr>\r\n<td>(B)</td>\r\n    <td>(iii) </td>\r\n    <td>(i) </td>\r\n<td>(iv)</td>\r\n <td>(ii)</td>\r\n</tr>\r\n<tr>\r\n<td>(C)</td>\r\n    <td>(i)</td>\r\n    <td>(ii)</td>\r\n<td>(iii)</td>\r\n    <td>(iv)</td>\r\n\r\n  </tr>\r\n  <tr>\r\n<td>(D)</td>\r\n    <td>(iv)</td>\r\n    <td>(iii)</td>\r\n    <td>(ii)</td>\r\n<td>(i)</td>\r\n  </tr>\r\n\r\n</table>\r\n\r\n</body>\r\n</html>",
+    "answers": [
+      { "id": 35877, "answer": "(A)", "correct": false },
+      { "id": 35878, "answer": "(B)", "correct": true },
+      { "id": 35879, "answer": "(C)", "correct": false },
+      { "id": 35880, "answer": "(D)", "correct": false }
+    ],
+    "explanation": "<li>Call control protocol do Connection management.</li><li> A-bis works between Mobile Switching Centre (MSC) and Base Station Subsystem (BSS)</li><li>BSMAP is a interface between Base Transceiver Station (BTS) and Base Station Controller (BSC) </li><li>CDMA is a spread spectrum.</li>\r\nSo, option (A) is correct."
+  },
+  {
+    "id": 3716,
+    "question": "<p dir=\"ltr\"><span>What does the following expression means ?&nbsp;</span><br><span>char ∗(∗(∗ a[N]) ( )) ( );</span></p>",
+    "answers": [
+      {
+        "id": 83055,
+        "answer": "<p dir=\"ltr\"><span>a pointer to a function returning array of n pointers to function returning character pointers.</span></p>",
+        "correct": false
+      },
+      {
+        "id": 83056,
+        "answer": "<p dir=\"ltr\"><span>a function return array of N pointers to functions returning pointers to characters</span></p>",
+        "correct": false
+      },
+      {
+        "id": 83057,
+        "answer": "<p dir=\"ltr\"><span>an array of n pointers to function returning pointers to characters</span></p>",
+        "correct": false
+      },
+      {
+        "id": 83058,
+        "answer": "<p dir=\"ltr\"><span>an array of n pointers to function returning pointers to functions returning pointers to characters.</span></p>",
+        "correct": true
+      }
+    ],
+    "explanation": "<p dir=\"ltr\"><span>*a[N] means an array of n pointers, and similarly (*(*a[N])) represents pointers to function and therefore char ∗(∗(∗ a[N]) ( )) ( ) means an array of n pointers to function returning pointers to functions returning pointers to characters.</span></p>"
+  },
+  {
+    "id": 4399,
+    "question": "Which of the following is not a member of class?",
+    "answers": [
+      { "id": 17976, "answer": "Static function", "correct": false },
+      { "id": 17977, "answer": "Friend function", "correct": true },
+      { "id": 17978, "answer": "Const function", "correct": false },
+      { "id": 17979, "answer": "Virtual function", "correct": false }
+    ],
+    "explanation": "<p>Friend function is not a member of class.\r\nFor more information on Friend class Refer:<a href=\"https://www.geeksforgeeks.org/friend-class-function-cpp/\" rel=\"noopener\" target=\"_blank\">Friend class and function in C++</a>\r\nOption (B) is correct.</p>"
+  }
+]
